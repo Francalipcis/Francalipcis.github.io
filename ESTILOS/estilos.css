@@ -1,0 +1,794 @@
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    background: linear-gradient(to bottom, rgb(39, 22, 136), rgb(51, 51, 51), rgb(51, 51, 51), rgb(51, 51, 51) );    
+}
+
+p{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 300px;
+}
+
+/*Configuracion de los A*/
+a{
+    text-decoration: none;
+}
+
+a, i{
+    font-size: 20px;
+
+}
+
+
+
+/* Configuracion Fixed */
+.Menu-fixed{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+
+/* imagen y texto del logo */
+.h1_cavesera{
+    margin-left: 80px;
+    margin-top: -48px;
+}
+
+.Logo{
+    margin-top: 30px;
+    width: 80px;
+    height: 60px;
+    padding-top: 0px;
+}
+
+.Cavesera{
+    background-color: black;
+    width: 233px;
+    height: 697px;
+    font-family: Gotham;
+    color: #fff;
+}
+
+
+
+/* Enlases */
+.Inicio, .Buscar, .Biblioteca{
+    font-size: 17px;
+    margin-left: 73px;
+    display: block;
+    margin-top: 20px;
+    
+}
+
+
+.Inicio{
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    width: 100px;
+    padding-left: 70px;
+    padding-right: 60px;
+    padding-top: 9;
+    padding-bottom: 9;
+    border-radius: 5px;
+    margin-left: 0%;
+}
+
+.Inicio:hover{
+    background-color: rgba(102, 102, 102, 0.664);
+}
+
+
+
+
+
+.Buscar{
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    width: 100px;
+    padding-left: 70px;
+    padding-right: 60px;
+    padding-top: 9;
+    padding-bottom: 9;
+    border-radius: 5px;
+    margin-left: 0%;
+}
+
+.Buscar:hover{
+    background-color: rgba(102, 102, 102, 0.664);
+}
+
+.Biblioteca{
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    width: 160px;
+    padding-left: 70px;
+    padding-right: 0px;
+    padding-top: 9;
+    padding-bottom: 9;
+    border-radius: 5px;
+    margin-left: 0px;
+}
+
+.Biblioteca:hover{
+    background-color: rgba(102, 102, 102, 0.664);
+}
+
+
+.Titulo{
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+
+
+/*Crear playlist*/
+.Crear_playlist{
+    color: #fff;
+    margin-left: 87px;
+    font-size: 16px;
+}
+
+
+.signo_sumar_play{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    width: 30px;
+    padding-left: 6px;
+    font-size: 30px;
+    margin-left: 38px;
+    margin-top: -27px;    
+}
+
+
+/*Favoritos*/
+.favoritos{
+    color: #fff; 
+    margin-left: 87px;
+    font-size: 16px;
+}
+
+.signo_favoritos{
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(162, 23, 255), white);
+    width: 30px;
+    padding-left: 7px;
+    padding-right: 1px;
+    margin-left: 37px;
+    margin-top: -29px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+
+
+.divisor{
+    color: rgb(51, 51, 51);
+    font-size: 30px;
+    margin-left: 38px;
+}
+
+
+.Buenos_dias{
+    color: #fff;
+    font-family: Gotham;
+    font-size: 30px;
+    margin-left: 266px;
+    margin-top: 100px;
+    font-style:normal;
+}
+
+
+
+
+/* Portadas */
+
+
+
+
+/* Believer */
+.believer_portada{
+    width: 93px;
+    height: 87px;
+    margin-left: 268px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.believer_boton{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: Gotham;
+    display: block;
+    margin-left: 357px;
+    margin-top: -87px;
+}
+
+.believer_boton{
+    background-color: rgba(182, 182, 182, 0.226);
+    padding-top: 28px;
+    height: 43px;
+    padding-bottom: 16px;
+    padding-left: 18;
+    width: 238px;
+    border-radius: 5px;
+}
+
+.believer_boton{
+    transition: 0.29s;
+}
+
+.believer_boton:hover{
+    background-color: rgba(214, 214, 214, 0.322);
+}
+
+.icono_reproducir i{
+    font-size: 30px;
+}
+
+.icono_reproducir{
+    color: rgba(255, 255, 255, 0); 
+    margin-left: -13px;
+    margin-top: -55px;
+    padding-top: 30px;
+    padding-left: 200px;
+    padding-bottom: 34px;
+}
+
+.icono_reproducir{
+    transition: 0.29s;
+}
+
+.icono_reproducir:hover{
+    color:rgb(51, 228, 28);
+}
+
+
+/* Marshmello */
+
+.marshmello{
+    margin-top: -87;
+    margin-left: 640px;
+    background-color: rgb(255, 255, 255);
+    width: 93px;
+}
+
+.marsh_boton .icono_reproducir i{
+    margin-left: -22px;
+}
+
+
+.marsh_portada{
+    width: 93px;
+    height: 87px;
+    margin-left: 0px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.marsh_boton{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: Gotham;
+    display: block;
+    margin-left: 90px;
+    margin-top: -87px;
+}
+
+.marsh_boton{
+    background-color: rgba(182, 182, 182, 0.226);
+    padding-top: 28px;
+    height: 43px;
+    padding-bottom: 16px;
+    padding-left: 18;
+    width: 215px;
+    border-radius: 5px;
+}
+
+.marsh_boton{
+    transition: 0.29s;
+}
+
+.marsh_boton:hover{
+    background-color: rgba(214, 214, 214, 0.322);
+}
+
+
+
+/* Monkey Business */
+
+.pump{
+    margin-top: -87;
+    margin-left: 985px;
+    background-color: rgb(255, 255, 255);
+    width: 93px;
+}
+
+
+.pump_boton .icono_reproducir i{
+    margin-left: -22px;
+}
+
+
+.pump_portada{
+    width: 93px;
+    height: 87px;
+    margin-left: 0px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.pump_boton{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: Gotham;
+    display: block;
+    margin-left: 90px;
+    margin-top: -87px;
+}
+
+.pump_boton{
+    background-color: rgba(182, 182, 182, 0.226);
+    padding-top: 28px;
+    height: 43px;
+    padding-bottom: 16px;
+    padding-left: 18;
+    width: 215px;
+    border-radius: 5px;
+}
+
+.pump_boton{
+    transition: 0.29s;
+}
+
+.pump_boton:hover{
+    background-color: rgba(214, 214, 214, 0.322);
+}
+
+
+
+
+
+/* Abel pintos */
+
+.abel{
+    margin-top: 20px;
+    margin-left: 268px;
+    background-color: rgb(255, 255, 255);
+    width: 93px;
+}
+
+
+.abel_boton .icono_reproducir i{
+    margin-left: 1px;
+}
+
+
+.abel_portada{
+    width: 93px;
+    height: 87px;
+    margin-left: 0px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.abel_boton{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: Gotham;
+    display: block;
+    margin-left: 90px;
+    margin-top: -87px;
+}
+
+.abel_boton{
+    background-color: rgba(182, 182, 182, 0.226);
+    padding-top: 28px;
+    height: 43px;
+    padding-bottom: 16px;
+    padding-left: 18;
+    width: 238px;
+    border-radius: 5px;
+}
+
+.abel_boton{
+    transition: 0.29s;
+}
+
+.abel_boton:hover{
+    background-color: rgba(214, 214, 214, 0.322);
+}
+
+
+
+/* Seguro te pierdo */
+
+.seguro{
+    margin-top: -88;
+    margin-left: 640px;
+    background-color: rgb(255, 255, 255);
+    width: 93px;
+}
+
+.seguro_boton .icono_reproducir i{
+    margin-left: -22px;
+}
+
+
+.seguro_portada{
+    width: 93px;
+    height: 87px;
+    margin-left: 0px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.seguro_boton{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: Gotham;
+    display: block;
+    margin-left: 90px;
+    margin-top: -87px;
+}
+
+.seguro_boton{
+    background-color: rgba(182, 182, 182, 0.226);
+    padding-top: 28px;
+    height: 43px;
+    padding-bottom: 16px;
+    padding-left: 18;
+    width: 215px;
+    border-radius: 5px;
+}
+
+.seguro_boton{
+    transition: 0.29s;
+}
+
+.seguro_boton:hover{
+    background-color: rgba(214, 214, 214, 0.322);
+}
+
+
+
+/* Guardians of de galaxy */
+
+.guardianes{
+    margin-top: -87;
+    margin-left: 985px;
+    background-color: rgb(255, 255, 255);
+    width: 93px;
+}
+
+
+
+.guardianes_boton .icono_reproducir i{
+    margin-left: -22px;
+}
+
+
+.guardianes_portada{
+    width: 93px;
+    height: 87px;
+    margin-left: 0px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+
+
+.guardianes_boton{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: Gotham;
+    display: block;
+    margin-left: 90px;
+    margin-top: -87px;
+}
+
+.guardianes_boton{
+    background-color: rgba(182, 182, 182, 0.226);
+    padding-top: 28px;
+    height: 43px;
+    padding-bottom: 16px;
+    padding-left: 18;
+    width: 215px;
+    border-radius: 5px;
+}
+
+.guardianes_boton{
+    transition: 0.29s;
+}
+
+.guardianes_boton:hover{
+    background-color: rgba(214, 214, 214, 0.322);
+}
+
+
+
+/* BISTOS RECIENTEMENTE */
+
+
+.separador_otro{
+    /*background-color: #fff;*/
+    color: #fff;
+    font-family: Gotham;
+    font-size: 30px;
+    margin-left: 266px;
+    margin-top: 100px;
+    display: block;
+    text-decoration: none;
+    width: 401px;
+}
+
+.separador_otro:hover{
+    text-decoration:underline;
+}
+
+
+
+
+/* Guia de supervivencia */
+
+.guia{
+    margin-left: 270px;
+    margin-top: 40px;
+}
+
+.guia_portada{
+    width: 152px;
+    height: 157px;
+    margin-left: 0px;
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 14px;
+}
+
+.guia_boton{
+    background-color: rgba(214, 214, 214, 0.123);
+    color: #fff;
+    font-family: Gotham;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 150px;
+    display: block;
+    border-radius: 5px;
+}
+
+.guia_boton{
+    transition: 0.29s;
+}
+
+.guia_boton:hover{
+    background-color: rgba(214, 214, 214, 0.308);
+}
+
+.guia_boton{
+    margin-top: -170;
+    margin-left: -15;
+    padding-bottom: 0px;
+    padding-top: 190px;
+    width: 180px;
+
+}
+
+
+/* Icono Menu Bajo */
+
+.icono_repro2 i{
+    color: transparent;
+    /*background-color: tomato;*/
+    font-size: 30px;
+    margin-left: 1px;
+    margin-top: -210;
+    width: 35px;
+    padding-left: 144px;
+    padding-top: 150px;
+    padding-bottom: 90px;
+}
+
+.icono_repro2 i{
+    transition: 0.29s;
+}
+
+.icono_repro2 i:hover{
+    color:rgb(51, 228, 28);
+}
+
+
+
+/* super mix 2 */
+
+
+.guardianes_2{
+    margin-left: 480px;
+    margin-top: -257px;
+}
+
+.guardianes_2 .guia_portada{
+    width: 152px;
+    height: 157px;
+    margin-left: 0px;
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 14px;
+}
+
+.guardianes_2 .guia_boton{
+    background-color: rgba(214, 214, 214, 0.123);
+    color: #fff;
+    font-family: Gotham;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 150px;
+    display: block;
+    border-radius: 5px;
+}
+
+.guardianes_2 .guia_boton{
+    transition: 0.29s;
+}
+
+.guardianes_2 .guia_boton:hover{
+    background-color: rgba(214, 214, 214, 0.308);
+}
+
+.guardianes_2 .guia_boton{
+    margin-top: -170;
+    margin-left: -15;
+    padding-bottom: 0px;
+    padding-top: 190px;
+    width: 180px;
+
+}
+
+
+/* pump */
+
+.pump_2{
+    margin-left: 690px;
+    margin-top: -257px;
+}
+
+.pump_2 .guia_portada{
+    width: 152px;
+    height: 157px;
+    margin-left: 0px;
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 14px;
+}
+
+.pump_2 .guia_boton{
+    background-color: rgba(214, 214, 214, 0.123);
+    color: #fff;
+    font-family: Gotham;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 150px;
+    display: block;
+    border-radius: 5px;
+}
+
+.pump_2 .guia_boton{
+    transition: 0.29s;
+}
+
+.pump_2 .guia_boton:hover{
+    background-color: rgba(214, 214, 214, 0.308);
+}
+
+.pump_2 .guia_boton{
+    margin-top: -170;
+    margin-left: -15;
+    padding-bottom: 0px;
+    padding-top: 190px;
+    width: 180px;
+
+}
+
+
+
+/* Marshmello */
+
+.marsh_2{
+    margin-left: 900px;
+    margin-top: -257px;
+}
+
+.marsh_2 .guia_portada{
+    width: 152px;
+    height: 157px;
+    margin-left: 0px;
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 14px;
+}
+
+.marsh_2 .guia_boton{
+    background-color: rgba(214, 214, 214, 0.123);
+    color: #fff;
+    font-family: Gotham;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 150px;
+    display: block;
+    border-radius: 5px;
+}
+
+.marsh_2 .guia_boton{
+    transition: 0.29s;
+}
+
+.marsh_2 .guia_boton:hover{
+    background-color: rgba(214, 214, 214, 0.308);
+}
+
+.marsh_2 .guia_boton{
+    margin-top: -170;
+    margin-left: -15;
+    padding-bottom: 0px;
+    padding-top: 190px;
+    width: 180px;
+
+}
+
+
+
+
+/* Marshmello */
+
+.redbone{
+    margin-left: 1115px;
+    margin-top: -257px;
+}
+
+.redbone .guia_portada{
+    width: 152px;
+    height: 157px;
+    margin-left: 0px;
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 14px;
+}
+
+.redbone .guia_boton{
+    background-color: rgba(214, 214, 214, 0.123);
+    color: #fff;
+    font-family: Gotham;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 150px;
+    display: block;
+    border-radius: 5px;
+}
+
+.redbone .guia_boton{
+    transition: 0.29s;
+}
+
+.redbone .guia_boton:hover{
+    background-color: rgba(214, 214, 214, 0.308);
+}
+
+.redbone .guia_boton{
+    margin-top: -170;
+    margin-left: -15;
+    padding-bottom: 0px;
+    padding-top: 190px;
+    width: 180px;
+
+}
+
+
+
+
+
+
+
