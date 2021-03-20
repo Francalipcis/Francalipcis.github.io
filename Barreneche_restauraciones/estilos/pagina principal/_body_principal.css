@@ -1,0 +1,169 @@
+body{
+    /*background-color: rgb(255, 255, 255);*/
+    background-color: rgb(233, 206, 169);
+}
+
+.contenedor::-webkit-scrollbar {
+    width: 7px;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+.imagen_frase{
+    width: 1366px;
+    height: 450px;
+    margin-top: 82px;
+}
+
+
+
+
+/* Mas informacion */
+.mas_info_div{
+    margin-top: 60px;
+}
+
+
+#a_mas{
+    text-decoration: none;
+    color: black;
+}
+
+.mas{
+    margin-left: 30px;
+    text-decoration:none;
+    width: 268px;
+}
+
+.mas{
+    transition: 1s;
+}
+
+.mas:hover{
+    text-decoration: underline;
+}
+
+
+
+#mas_informacion{    
+    color: rgb(68, 52, 29);
+    font-family: Bahnschrift;
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+#mas_informacion .titulo1{
+    margin-left: 10px;
+}
+
+
+#mas_informacion .titulo2{
+    margin-left: 60px;
+}
+
+
+#mas_informacion .titulo3{
+    margin-left: 110px;
+}
+
+
+
+
+.mas_info_div .img1{
+    background-color: rgb(146, 120, 86);
+    margin-left: 300px;
+    margin-top: -44px;
+}
+
+.mas_info_div .img1{
+    width: 70px;
+    height: 70px;
+    box-shadow: rgb(146, 120, 86) 0px 1px 0px 5px;
+}
+
+.mas_info_div .img1:hover{
+    transition: 1s;
+}
+
+.mas_info_div .img1:hover{
+    width: 90px;
+    height: 90px;
+    box-shadow: rgb(146, 120, 86) 0px 1px 0px 0px;
+}
+
+
+
+
+
+
+
+.mas_info_div .img2{
+    background-color: rgb(86, 69, 47);
+    margin-left: 410px;
+    margin-top: -104px;
+}
+
+.mas_info_div .img2{
+    width: 50px;
+    height: 50px;
+    box-shadow: rgb(86, 69, 47) 0px 1px 0px 5px;
+}
+
+
+.mas_info_div .img2:hover{
+    transition: 1s;
+}
+
+.mas_info_div .img2:hover{
+    width: 70px;
+    height: 70px;
+    box-shadow: rgb(146, 120, 86) 0px 1px 0px 0px;
+}
+
+
+
+
+
+
+.mas_info_div .img3{
+    background-color: rgb(122, 99, 68);
+    margin-left: 500px;
+    margin-top: 0px;
+}
+
+.mas_info_div .img3{
+    width: 40px;
+    height: 40px;
+    box-shadow: rgb(122, 99, 68) 0px 1px 0px 5px;
+}
+
+
+
+.mas_info_div .img3:hover{
+    transition: 1s;
+}
+
+.mas_info_div .img3:hover{
+    width: 60px;
+    height: 60px;
+    box-shadow: rgb(146, 120, 86) 0px 1px 0px 0px;
+}
+
+
+
+
+
+
+.algunas_img img{
+    width: 400px;
+}
+
+
+
+

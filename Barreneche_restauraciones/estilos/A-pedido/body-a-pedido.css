@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(233, 206, 169);   
+}
+
+
+.telefono{
+    margin-left: 585px;
+}
+
+.telefono .titulo_p{
+    margin-left: -220px;
+    background-color:rgb(146, 120, 86);
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 200px;
+    width: 450px;
+}
+
+
+.telefono .titulo2{
+    margin-left: -330px;
+    background-color: rgb(173, 142, 101);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 300px;
+    width: 550px;
+}
+
+
+
+.titulo_p{
+    margin-top: 100px;
+    font-family: Bahnschrift;
+}
+
+
+.menu_cavesera{
+    margin-top: -113px;
+}
+
+
+
+
+.iconos{
+    background-color: rgb(146, 120, 86);
+}
+
+.iconos{
+    margin-left: -120px;
+    padding-left: 35px;
+    width: 400px;
+}
+
+
+.wats{
+    font-size: 40px;
+    color: #fff;
+    background-color:#25d366;
+    width: 45px;
+    padding-left: 11px;
+    padding-right: 1px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 500px;
+    margin-top: -10px; 
+    margin-left: 100px;
+}
+
+.Instagram{
+    display: block;
+    font-size: 40px;
+    color: #fff;
+    background-color:#ff00ff;
+    width: 45px;
+    padding-left: 11px;
+    padding-right: 1px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 500px;
+    margin-top: -55px;
+    margin-left: 200px;
+}
+
+

@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(233, 206, 169);
+}
+
+.body_content{
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.product_container{
+    margin-left: 20px;
+    margin: 15px;
+    margin-top: 100px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product_container:hover{
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.buton-add{
+    border:2px solid rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: 0.4s;
+    color: black;
+    border-radius: 2px;
+    font-family: Bahnschrift;
+    background-color: rgb(233, 206, 169);
+}
+
+.buton-add:hover{
+    background-color: #4caf50;
+    color: white;
+}
+
+
+
+.product_container img{
+    width: 200px;
+}
+.img2{
+    height: 200px;
+}
+.img3{
+    height: 200px;
+}
+.img4{
+    height: 200px;
+}
+
+
+
