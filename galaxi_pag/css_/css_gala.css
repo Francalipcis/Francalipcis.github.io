@@ -49,9 +49,33 @@ body{
 
 
 
+
+
+
+/* Menu cavesera */
 .menu_cavesera{
     margin-top: -110px;
 }
+
+.cavesera{
+    height: 110px;
+}
+
+
+.nav{
+    font-size: 23px;
+}
+
+
+.nav .enlase_1{
+    margin-left: -180px;
+}
+
+.u {
+    margin-top: -25px;
+    margin-left: 230px;
+}
+
 
 
 
