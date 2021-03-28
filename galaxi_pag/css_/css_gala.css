@@ -1,6 +1,12 @@
 body{
     background-color: rgb(233, 206, 169);
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
+
+
 
 
 .product_container{
@@ -82,7 +88,7 @@ body{
 
 @media screen and (max-width: 800px){
     body{
-        background-color: #ff8000;
+
     }
 }
 
