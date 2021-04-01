@@ -1,5 +1,20 @@
 body{
     background-color: rgb(233, 206, 169);
+}
+
+
+.cavesera{
+    margin-top: 100px;
+}
+
+
+
+.logo_cavesera{
+    margin-top: 25px;
+}
+
+
+.body_content{
     display: flex;
     flex-wrap: wrap;
 }
