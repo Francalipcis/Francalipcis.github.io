@@ -10,7 +10,10 @@ body{
 
 
 
-
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 
@@ -170,27 +173,6 @@ body{
 
 
 
-/* Media queris */
-
-@media (max-whidth: 1200px){
-    body {
-        font-size: 12px;
-    }
-}
-
-@media (max-whidth: 992px){
-    
-}
-
-@media (max-whidth: 768px){
-    
-}
-
-@media (max-whidth: 576px){
-    body{
-        font-size: 5px;
-    }
-}
 
 
 
