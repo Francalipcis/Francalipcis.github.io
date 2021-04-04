@@ -159,9 +159,11 @@ body{
 }
 
 
-
-
-
+/*
+.enlases{
+    background-color: cadetblue;
+}
+*/
 
 .algunas_img img{
     width: 25rem;
@@ -173,7 +175,15 @@ body{
 
 
 
+@media (max-width: 380px){
+    body{
+        background-color: chartreuse;
+    }
 
+    .cajas_negras{
+        margin-left: 0px;
+    }
+}
 
 
 
