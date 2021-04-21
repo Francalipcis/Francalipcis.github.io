@@ -1,7 +1,7 @@
     /*configuracion Cavesera*/
     .menu_cavesera{
         position:fixed;
-        margin-top: -21px;
+        margin-top: -110;
         box-shadow: 0px 0px 6px #000;
     }
 
@@ -24,7 +24,7 @@
         margin-top: 8px;
         margin-left: 0px;
         width: 1366;
-        height: 90px;
+        height: 110px;
         font-family: Courier,'Courier New' ,Courier;
     }
     
@@ -82,8 +82,20 @@
 
 
 
+    .nav{
+        font-size: 23px;
+    }
 
+
+    .nav .enlase_1{
+        margin-left: -180px;
+    }
     
+
+    .u {
+        margin-top: -25px;
+        margin-left: 230px;
+    }
 
 
 
