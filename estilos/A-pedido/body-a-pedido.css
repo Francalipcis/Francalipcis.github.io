@@ -3,8 +3,27 @@ body{
 }
 
 
+
+.u{
+    margin-top: -25px;
+    margin-left: 360px;
+    width: 400px;
+}
+
+
+
+
+.cavesera{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 12;
+}
+
+
 .telefono{
     margin-left: 585px;
+    margin-top: 60px;
 }
 
 .telefono .titulo_p{
