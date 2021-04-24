@@ -98,5 +98,49 @@
 
 
 
+    /* media queris */
 
+
+    @media all and (min-width: 1312px){
+        body{
+            background-color: aqua;
+        }
+
+    }
+
+    @media all and (max-width:360px){
+        .menu_cavesera{
+            margin-top: -110px;
+        }
+
+        .cavesera{
+            height: 45px;
+        }
+
+
+        .nav{
+            font-size: 23px;
+        }
+
+
+        .nav .enlase_1{
+            margin-left: -180px;
+        }
+
+        .u {
+            margin-top: -25px;
+            margin-left: 230px;
+        }
+
+
+        .logo_cavesera{
+            width: 75px;
+            height: 33px;
+        }
+
+    
+        
+    
+    
+    }
 
