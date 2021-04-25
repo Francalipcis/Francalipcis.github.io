@@ -111,7 +111,7 @@ body{
 
 
 
-@media all and (min-width:360px){
+@media all and (max-width:1336px){
     .product_container img{
         width: 400px;
     }
@@ -136,7 +136,7 @@ body{
 
 
 
-@media all and (min-width:1336px){
+@media all and (max-width:360px){
     .product_container img{
         width: 200px;
     }
