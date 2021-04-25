@@ -111,7 +111,7 @@ body{
 
 
 
-@media all and (max-width: 1080px){
+@media all and (min-width: 1080px){
     .product_container img{
         width: 400px;
     }
@@ -127,7 +127,7 @@ body{
 
 
     .product_container{
-        font-size: 40px;
+        font-size: 36px;
         margin-top: 120px;
     }
 }
