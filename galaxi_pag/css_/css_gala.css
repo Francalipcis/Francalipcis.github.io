@@ -111,7 +111,7 @@ body{
 
 
 
-@media all and (min-width: 1080px){
+@media all and (min-width:360px){
     .product_container img{
         width: 400px;
     }
@@ -133,4 +133,27 @@ body{
 }
 
 
+
+
+
+@media all and (min-width:1336px){
+    .product_container img{
+        width: 200px;
+    }
+    .img2{
+        height: 200px;
+    }
+    .img3{
+        height: 200px;
+    }
+    .img4{
+        height: 200px;
+    }
+
+
+    .product_container{
+        font-size: 20px;
+        margin-top: 120px;
+    }
+}
 
