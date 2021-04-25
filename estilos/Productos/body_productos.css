@@ -12,6 +12,7 @@ body{
     margin: 15px;
     margin-top: 100px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
 }
 
 .product_container:hover{
@@ -48,6 +49,26 @@ body{
 .img4{
     height: 200px;
 }
+
+
+
+
+
+@media all and (max-width:360px){
+    .product_container img{
+        width: 400px;
+    }
+    .img2{
+        height: 400px;
+    }
+    .img3{
+        height: 400px;
+    }
+    .img4{
+        height: 400px;
+    }
+}
+
 
 
 

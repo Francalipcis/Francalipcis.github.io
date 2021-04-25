@@ -39,8 +39,8 @@ body{
     margin: 15px;
     margin-top: 100px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    font-size: 30px;
-
+    font-size: 20px;
+    margin-top: 120px;
     
 }
 
@@ -66,16 +66,16 @@ body{
 
 
 .product_container img{
-    width: 400px;
+    width: 200px;
 }
 .img2{
-    height: 400px;
+    height: 200px;
 }
 .img3{
-    height: 400px;
+    height: 200px;
 }
 .img4{
-    height: 400px;
+    height: 200px;
 }
 
 
@@ -111,7 +111,25 @@ body{
 
 
 
-@media screen and (max-width: 1080px){
+@media all and (max-width: 1080px){
+    .product_container img{
+        width: 400px;
+    }
+    .img2{
+        height: 400px;
+    }
+    .img3{
+        height: 400px;
+    }
+    .img4{
+        height: 400px;
+    }
+
+
+    .product_container{
+        font-size: 40px;
+        margin-top: 120px;
+    }
 }
 
 
