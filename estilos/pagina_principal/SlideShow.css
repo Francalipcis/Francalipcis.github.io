@@ -30,7 +30,7 @@
 .nos_dedicamos .ar1:hover{
     width: 250px;
     margin-left: -210;
-}
+    }
 
 
 
@@ -169,9 +169,24 @@
         margin-left: 25%;
     }
 
+    
+    .SlideShow .img_s{
+        transition: 0.80s;
+    }
+
+
+    .SlideShow .img_s:hover{
+        width: 450%;
+        margin-left: 5%;
+    }
+
+
+
     #img{
         margin-top: 10%;
-      }    
+    }
+    
+
 
 
       #algunas_de_nuestras{
