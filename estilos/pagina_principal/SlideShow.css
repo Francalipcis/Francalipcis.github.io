@@ -17,8 +17,8 @@
 
 .nos_dedicamos .ar1{
     width: 160px;
-    margin-top: -300px;
-    margin-left: -160px;
+    margin-top: -60px;
+    margin-left:-160px;
     box-shadow:  rgb(146, 120, 86) 10px 10px 10px 0px;
 }
 
@@ -29,6 +29,7 @@
 
 .nos_dedicamos .ar1:hover{
     width: 250px;
+    margin-left: -210;
 }
 
 
@@ -37,7 +38,7 @@
 .nos_dedicamos a .ar2{
     display: block;
     width: 270px;
-    margin-top: -400px;
+    margin-top: -300px;
     margin-left: 40px;
     box-shadow:  rgb(146, 120, 86) 10px 10px 10px 0px;
 }
@@ -47,8 +48,6 @@
 
 .nos_dedicamos a .ar2:hover{
     width: 400px;
-    margin-top: -70px;
-    margin-left: 70px;
     box-shadow:  rgb(146, 120, 86) 10px 10px 10px 0px;
 }
 
