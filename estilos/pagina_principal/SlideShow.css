@@ -35,19 +35,19 @@
 
 
 
-.nos_dedicamos a .ar2{
+.nos_dedicamos .ar2{
     display: block;
     width: 270px;
     margin-top: -300px;
     margin-left: 40px;
     box-shadow:  rgb(146, 120, 86) 10px 10px 10px 0px;
 }
-.nos_dedicamos a .ar2{
+.nos_dedicamos .ar2{
     transition: 0.80s;
 }
 
-.nos_dedicamos a .ar2:hover{
-    width:a 400px;
+.nos_dedicamos .ar2:hover{
+    width:400px;
     box-shadow:  rgb(146, 120, 86) 10px 10px 10px 0px;
 }
 
@@ -117,10 +117,10 @@
 
 
 
+/* Media queris */
 
 
-
-@media all and (max-width:360px){
+@media all and (max-width:414px){
     .nos_dedicamos .ar1{
         background-color: transparent;
         width: 1px;
@@ -130,30 +130,65 @@
     }
 
 
-    .nos_dedicamos a .ar2{
-        width: 270px;
+    .nos_dedicamos .ar2{
+        width: 80%;
         margin-top: 00px;
         margin-left: 40px;
         box-shadow:  rgb(146, 120, 86) 10px 10px 10px 0px;
     }
 
-    .nos_dedicamos a .ar2{
+    .nos_dedicamos .ar2{
         transition: 0.80s;
     }
     
-    .nos_dedicamos a .ar2:active{
+    .nos_dedicamos .ar2:hover{
         width: 340px;
-        margin-left: 0px;
+        margin-left: 2%;
         box-shadow:  rgb(146, 120, 86) 10px 10px 10px 0px;
     }
 
     .titulos{
-        margin-left: 10px;
+        margin-left: 10%;
         margin-top: -340px;
     }
 
-}
 
+
+
+
+
+
+    .tag_1 h2{
+        color: transparent;
+        margin-left: -1000;
+    }
+
+    .SlideShow .img_s{
+        background-color: transparent;
+        width: 300%;
+        margin-left: 25%;
+    }
+
+    #img{
+        margin-top: 10%;
+      }    
+
+
+      #algunas_de_nuestras{
+          margin-left:10%;
+          font-size: 20px;
+          width: 105%;
+          height: 5%;
+          padding-top: 6px;
+          padding-right: 2.5%;
+          padding-left: 20%;
+          border-radius: 8px;
+          background-color:rgb(146, 120, 86);
+      }
+
+
+
+}
 
 
 
