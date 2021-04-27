@@ -44,6 +44,37 @@ footer{
 }
 
 
-
-
+@media all and (max-width:414px){
+    .logo_fran{
+        width: 55%;
+        margin-left: 20%;
+        margin-top: 10px;
+    }
+    
+    .LF{
+        font-size: 20px;
+        color: transparent;
+        margin-top: -70px;
+        margin-left: -280px;
+    }
+    
+    
+    
+    .logo_fother{
+        width: 55%;
+        margin-left: 20%;
+        margin-top: -90px;
+    }
+    
+    
+    
+    
+    .instagram i{
+        font-size: 25px;
+        color: #fff;
+        width: 25px;
+        margin-left: -170px;
+        margin-top: 100px;
+    }   
+}
 
