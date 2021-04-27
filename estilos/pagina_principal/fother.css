@@ -48,7 +48,7 @@ footer{
     .logo_fran{
         width: 55%;
         margin-left: 20%;
-        margin-top: 10px;
+        margin-top: 1%;
     }
     
     .LF{
@@ -63,7 +63,7 @@ footer{
     .logo_fother{
         width: 55%;
         margin-left: 20%;
-        margin-top: -90px;
+        margin-top: 5%;
     }
     
     
@@ -73,8 +73,8 @@ footer{
         font-size: 25px;
         color: #fff;
         width: 25px;
-        margin-left: -170px;
-        margin-top: 100px;
+        margin-left: 25%;
+        margin-top: 10%;
     }   
 }
 
