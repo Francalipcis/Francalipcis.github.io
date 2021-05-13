@@ -136,7 +136,7 @@ body{
 
 
 
-@media all and (max-width:360px){
+@media all and (max-width:1256px){
     .product_container img{
         width: 200px;
     }
@@ -156,4 +156,6 @@ body{
         margin-top: 120px;
     }
 }
+
+
 
