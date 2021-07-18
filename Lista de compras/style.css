@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+}
+
+
+body{
+    background-color: burlywood;
+    border: dashed;
+}
+
+.titulo{
+    text-align: center;
+}
+
+
+.colorTexDiv{
+    margin-left: 45%;
+}
+
+
+.buttonAdd{
+    margin-left: 10px;
+}   
+
+
+
+
+
+
+
+.item{
+    background-color: rgb(255, 232, 190);
+    border: double;
+}
+
+
+
+
+
+
+
