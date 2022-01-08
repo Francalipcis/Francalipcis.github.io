@@ -1,7 +1,10 @@
 window.addEventListener('load', () => {
-    const apiKey = "49c60457d616bfc98ae64346d1c7205c"
+    const apiKey = "de09f2829c1f439a88b133130220801"
     let long;
     let lat;
+
+
+    let position
 
 
     let Description = document.getElementById('sky_description');
@@ -12,8 +15,6 @@ window.addEventListener('load', () => {
 
     let Country = document.getElementById('country'); 
     let City = document.getElementById('city');
-    let cordinates_lat = document.getElementById('coordinates_lat');
-    let cordinates_lon = document.getElementById('coordinates_lon');
 
 
 
@@ -25,12 +26,15 @@ window.addEventListener('load', () => {
             console.log(position);
             long = position.coords.longitude;
             lat = position.coords.latitude;
+            
+            
             let to_day = new Date();
 
 
             const proxi = 'https://cors-anywhere.herokuapp.com/'
-            const api = `${proxi}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&lang=es&units=metric`
-     
+
+            const api = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${long}&aqi=yes`
+
 
             fetch(api)
             .then(data => { //recolectando la data de la api y combirtuendola en un objeto
@@ -38,67 +42,72 @@ window.addEventListener('load', () => {
             })
             .then(data =>{  //recolectando informacion del JSON
                 console.log(data);
-                const {temp, humidity, pressure} = data.main;
-                const {country} = data.sys;
-                const {lat, lon} = data.coord;
-                const {speed} = data.wind;
-                const {all} = data.clouds;
+                const {cloud, humidity, temp_c, wind_kph} = data.current;
+                const {text} = data.current.condition;
+                const {tz_id} = data.location
+
 
                 
                 //Seteando los elementos del dom de la api
 
                 //definiendo si esta despejado o nublado dependiendo la cantidad de nuves 
-                if(all < 100){
-                    Description.textContent = "clear";
-                }else{
-                    Description.textContent = "cloudy";
-                }
+                Description.textContent = text;
+
                 
                 //localisacion
-                Country.textContent = data.name + ", ";
-                City.textContent = country;   
+                Country.textContent = tz_id;
                 
                 //humedad
                 humiditi.textContent = humidity;
                 
                 //temperatura
-                temperature.textContent = Math.round(temp);
+                temperature.textContent = Math.round(temp_c);
                 
                 //velocidad del viento
-                wind_speed.textContent = speed + "K/h";
+                wind_speed.textContent = wind_kph + "K/h";
                 
                 
                 
                 //cambia el mensage de el id "description_wind" dependiendo la velosidad del viento
-                if(speed > 2){
+                if(wind_kph <= 1){
                     description_wind.textContent = "Calm";
-                }else if(between(speed, 2, 11)){
+                }else if(between(wind_kph, 2, 11)){
                     description_wind.textContent = "Weak breeze";
-                }else if(between(speed, 12, 28)){
+                }else if(between(wind_kph, 12, 28)){
                     description_wind.textContent = "Moderate breeze";
-                }else if(between(speed, 29, 38)){
+                }else if(between(wind_kph, 29, 38)){
                     description_wind.textContent = "Fresh breeze";
-                }else if(between(speed, 39, 49)){
+                }else if(between(wind_kph, 39, 49)){
                     description_wind.textContent = "Strong breeze";
-                }else if(between(speed, 50, 61)){
+                }else if(between(wind_kph, 50, 61)){
                     description_wind.textContent = "Strong wind";
-                }else if(between(speed, 62, 74)){
+                }else if(between(wind_kph, 62, 74)){
                     description_wind.textContent = "Temporary";
-                }else if(between(speed, 75, 88)){
+                }else if(between(wind_kph, 75, 88)){
                     description_wind.textContent = "Strong temporary";
-                }else if(between(speed, 89, 117)){
+                }else if(between(wind_kph, 89, 117)){
                     description_wind.textContent = "Very hard temporary";
-                }else if(speed >= 118){
+                }else if(wind_kph >= 118){
                     description_wind.textContent = "Hurricane storm";
                 }
                 
                 
                 
+                //cambia la imagen de la temperatura dependiendo de la misma
+                if (temp_c >= 28){
+                    document.getElementById('temp_img').src="./icons/hot.png";
+                }else if (between(temp_c, 20, 28)){
+                    document.getElementById('temp_img').src="./icons/warm.png";
+                }else if (temp_c <= 19 ){
+                    document.getElementById('temp_img').src="./icons/cold.png";
+                }
+
+
                 
                 
                 //cambia la imagen del #sky dependiendo la hora
-                if (to_day.getHours() >= 6 && to_day.getHours() <= 12){
-                    if(all >= 100){
+                if (to_day.getHours() >= 4 && to_day.getHours() <= 6){
+                    if(cloud >= 100){
                         if(humidity >= 98){
                             document.getElementById('sky_img').src="./icons/rainy";
                         }else{
@@ -112,9 +121,9 @@ window.addEventListener('load', () => {
                         }
                     }
                 }
-                if (to_day.getHours() >= 12 && to_day.getHours() <= 18){
+                if (to_day.getHours() >= 6 && to_day.getHours() <= 18){
                     
-                    if(all >= 100){
+                    if(cloud >= 100){
                         if(humidity >= 98){
                             document.getElementById('sky_img').src="./icons/rainy";
                         }else{
@@ -130,9 +139,9 @@ window.addEventListener('load', () => {
                     
                 }
                 
-                if (to_day.getHours() >= 6 && to_day.getHours() <= 20){
+                if (to_day.getHours() >= 18 && to_day.getHours() <= 4){
                     
-                    if(all >= 100){
+                    if(cloud >= 100){
                         if(humidity >= 98){
                             document.getElementById('sky_img').src="./icons/rainy";
                         }else{
@@ -149,14 +158,6 @@ window.addEventListener('load', () => {
 
                 
 
-                //cambia la imagen de la temperatura dependiendo de la misma
-                if (temp >= 28){
-                    document.getElementById('temp_img').src="./icons/hot.png";
-                }else if (between(temp, 20, 28)){
-                    document.getElementById('temp_img').src="./icons/warm.png";
-                }else if (temp <= 19 ){
-                    document.getElementById('temp_img').src="./icons/cold.png";
-                }
 
 
 

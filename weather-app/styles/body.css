@@ -1,5 +1,6 @@
 body{
-    background: linear-gradient(to bottom, #00c3ff, #00FFFF, #339cc2);;
+/*    background: linear-gradient(to bottom, #00c3ff, #00FFFF, #339cc2);*/
+    background-image: url("../bakground/bg.jpg");
     font-family:"TT Commons Light";
 }
 
@@ -60,7 +61,7 @@ body{
 .sky_img{
     position: fixed;
     width: 50px;
-    margin-left: 26.5%;
+    margin-left: 32.5%;
 }
 
 
