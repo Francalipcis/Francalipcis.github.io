@@ -1,6 +1,5 @@
 body{
-    background-color: #00FFFF;
-    background: linear-gradient(to bottom, #00c3ff, #00FFFF, #339cc2);
+    background: linear-gradient(to bottom, #00c3ff, #00FFFF, #339cc2);;
     font-family:"TT Commons Light";
 }
 

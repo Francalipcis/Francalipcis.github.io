@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    const apiKey = "1cea7c07d85f104f3d22ef9530efc69a"
+    const apiKey = "49c60457d616bfc98ae64346d1c7205c"
     let long;
     let lat;
 
@@ -28,7 +28,6 @@ window.addEventListener('load', () => {
             let to_day = new Date();
 
 
-
             const proxi = 'https://cors-anywhere.herokuapp.com/'
             const api = `${proxi}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&lang=es&units=metric`
      
@@ -45,8 +44,8 @@ window.addEventListener('load', () => {
                 const {speed} = data.wind;
                 const {all} = data.clouds;
 
-
-                    //Seteando los elementos del dom de la api
+                
+                //Seteando los elementos del dom de la api
 
                 //definiendo si esta despejado o nublado dependiendo la cantidad de nuves 
                 if(all < 100){
@@ -54,23 +53,24 @@ window.addEventListener('load', () => {
                 }else{
                     Description.textContent = "cloudy";
                 }
-
+                
                 //localisacion
                 Country.textContent = data.name + ", ";
                 City.textContent = country;   
-
+                
                 //humedad
                 humiditi.textContent = humidity;
-
+                
                 //temperatura
                 temperature.textContent = Math.round(temp);
                 
                 //velocidad del viento
                 wind_speed.textContent = speed + "K/h";
-
-
+                
+                
+                
                 //cambia el mensage de el id "description_wind" dependiendo la velosidad del viento
-                if(speed <= 1){
+                if(speed > 2){
                     description_wind.textContent = "Calm";
                 }else if(between(speed, 2, 11)){
                     description_wind.textContent = "Weak breeze";
@@ -91,19 +91,60 @@ window.addEventListener('load', () => {
                 }else if(speed >= 118){
                     description_wind.textContent = "Hurricane storm";
                 }
-
-
+                
+                
+                
+                
+                
                 //cambia la imagen del #sky dependiendo la hora
-                if (between(to_day.getHours(), 6, 12) ){
-                    document.getElementById('sky_img').src="./icons/sunrise.png";
+                if (to_day.getHours() >= 6 && to_day.getHours() <= 12){
+                    if(all >= 100){
+                        if(humidity >= 98){
+                            document.getElementById('sky_img').src="./icons/rainy";
+                        }else{
+                            document.getElementById('sky_img').src="./icons/cloudy";
+                        }
+                    }else{
+                        if(humidity >= 98){
+                            document.getElementById('sky_img').src="./icons/rainy";
+                        }else{
+                            document.getElementById('sky_img').src="./icons/sunrise.png";
+                        }
+                    }
+                }
+                if (to_day.getHours() >= 12 && to_day.getHours() <= 18){
+                    
+                    if(all >= 100){
+                        if(humidity >= 98){
+                            document.getElementById('sky_img').src="./icons/rainy";
+                        }else{
+                            document.getElementById('sky_img').src="./icons/cloudy";
+                        }
+                    }else{
+                        if(humidity >= 98){
+                            document.getElementById('sky_img').src="./icons/rainy";
+                        }else{
+                            document.getElementById('sky_img').src="./icons/sun.png";
+                        }
+                    }
+                    
                 }
                 
-                if (between(to_day.getHours(), 12, 19) ){
-                    document.getElementById('sky_img').src="./icons/sun.png";
-                }
-                
-                if (between(to_day.getHours(), 19, 24) ){
-                    document.getElementById('sky_img').src="./icons/night.png";
+                if (to_day.getHours() >= 6 && to_day.getHours() <= 20){
+                    
+                    if(all >= 100){
+                        if(humidity >= 98){
+                            document.getElementById('sky_img').src="./icons/rainy";
+                        }else{
+                            document.getElementById('sky_img').src="./icons/cloud-night.png";
+                        }
+                    }else{
+                        if(humidity >= 98){
+                            document.getElementById('sky_img').src="./icons/rainy";
+                        }else{
+                            document.getElementById('sky_img').src="./icons/night.png";
+                        }
+                    }
                 }
 
                 
@@ -111,7 +152,7 @@ window.addEventListener('load', () => {
                 //cambia la imagen de la temperatura dependiendo de la misma
                 if (temp >= 28){
                     document.getElementById('temp_img').src="./icons/hot.png";
-                }else if (between(temp, 20, 27)){
+                }else if (between(temp, 20, 28)){
                     document.getElementById('temp_img').src="./icons/warm.png";
                 }else if (temp <= 19 ){
                     document.getElementById('temp_img').src="./icons/cold.png";

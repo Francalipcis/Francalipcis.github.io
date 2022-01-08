@@ -2,7 +2,6 @@ header{
     display: flex;
     justify-content: center;
     background: linear-gradient(to bottom,#23b2ded4, #ffffff3f);
-    background-color: #23b2ded4;
     margin: -22px -7px;
     height: 50px;
 }
@@ -30,11 +29,6 @@ header{
     margin-top: 4%;
     margin-right: 0%;
 }
-
-
-
-
-
 
 
 
