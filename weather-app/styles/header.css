@@ -1,0 +1,28 @@
+header{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(254, 243, 230), #ffffff3f);
+    margin: -22px -7px;
+    height: 50px;
+}
+
+
+
+/*localidad unbicada en el heder*/
+.header{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family:monospace;
+    width: 200px;
+    font-size: 12px;
+    margin-top: 11px;
+}
+.city{
+    position: fixed;
+    margin-top: 4%;
+    margin-right: 12%;
+}
+
+
+
