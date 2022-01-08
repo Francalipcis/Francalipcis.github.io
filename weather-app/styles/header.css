@@ -11,7 +11,7 @@ header{
 /*localidad unbicada en el heder*/
 .header{
     display: flex;
-    justify-content: center;
+    align-items: center;
     color: rgb(0, 0, 0);
     font-family:monospace;
     width: 200px;
@@ -19,9 +19,18 @@ header{
     margin-top: 11px;
 }
 .city{
-    position: fixed;
+    display: inline-block;
+    position: absolute;
     margin-top: 4%;
-    margin-right: 12%;
+    margin-right: 50%;
+}
+/*header*/
+.favico{
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    margin-top: 15px;
+    margin-right: 100px;
 }
 
 

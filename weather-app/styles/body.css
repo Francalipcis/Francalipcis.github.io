@@ -2,6 +2,9 @@ body{
 /*    background: linear-gradient(to bottom, #00c3ff, #00FFFF, #339cc2);*/
     background-image: url("../bakground/bg.jpg");
     font-family:"TT Commons Light";
+
+    align-items: center;
+    overflow: hidden;
 }
 
 
@@ -10,15 +13,10 @@ body{
     src: url("../fonts/TT\ Commons\ Light.otf");
 }
 
-
-
 /*generales description sky & description wind*/
 .description_div{
     color: #fff;
 }
-
-
-
 
 
 
@@ -34,17 +32,23 @@ body{
 /*data general del tiempo*/
 
 .weather_general_data{
-    display: block;
+    position:absolute;
     color: #fff;
     font-family: "TT Commons Light";
-    margin-top: 120.6%;
-    height: 142.9px;
+    padding: 0%;
+    margin-top: 100.6%;
+    margin-left: 2%;
+    margin-bottom: 0%;
+    width: 330.7px;
+    height: 140px;
 }
 
     /*descripcion del viento*/
 .description_wind{
+    position: absolute;
+    display: inline-block;
     font-weight: 10;
-    margin-top: -43px;
+    margin-top: 17.5%;
     margin-left: 23px;
     font-size: 23px;
     letter-spacing: 3px;
@@ -52,6 +56,9 @@ body{
 
     /*descripcion del cielo*/
 .description_sky{
+    position: absolute;
+    display:inline-block;
+    margin-top: 5%;
     font-weight: 10;
     font-size: 40px;
     letter-spacing: 3px;
@@ -59,9 +66,11 @@ body{
 
 
 .sky_img{
-    position: fixed;
+    display: inline-block;
+    position: absolute;
+    margin-top: 6%;
     width: 50px;
-    margin-left: 32.5%;
+    margin-left: 40.5%;
 }
 
 
@@ -69,11 +78,22 @@ body{
 
 
 
-    /*temperatura*/
+/*temperatura*/
 .temp{
-    margin-left: 57%;
-    margin-top: -80px;
-    font-size: 95px;
+    position: absolute;
+    display: inline-block;
+    margin-left: 54%;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 100px;
+}
+
+.temp_img{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    margin-top: 27px;
+    margin-left: 72%;
 }
 
 
@@ -81,13 +101,16 @@ body{
 /*detalles del clima*/
 
 .weather_ditails{
+    position: absolute;
+    display: inline-block;
     height: 30px;
-    margin-top: -35%;
+    margin-top: 27%;
     font-size: 25px;
     width: 50%;
 }
 
 .wind_speed{
+
     margin-left: 10px;
 }
 
@@ -98,18 +121,12 @@ body{
 
 
 .humidity_img{
-    position: fixed;
+    display: inline-block;
+    position:absolute;
     width: 30px;
 }
 
 
-
-.temp_img{
-    position: fixed;
-    width: 100px;
-    margin-top: -20%;
-    margin-left: 75%;
-}
 
 
 
