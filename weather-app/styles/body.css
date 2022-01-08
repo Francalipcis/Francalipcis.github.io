@@ -1,0 +1,120 @@
+body{
+    background-color: #00FFFF;
+    background: linear-gradient(to bottom, #00c3ff, #00FFFF, #339cc2);
+    font-family:"TT Commons Light";
+}
+
+
+@font-face {
+    font-family: TT Commons Light;
+    src: url("../fonts/TT\ Commons\ Light.otf");
+}
+
+
+
+/*generales description sky & description wind*/
+.description_div{
+    color: #fff;
+}
+
+
+
+
+
+
+/*
+.description_sky{
+    margin-left: 38%;
+    margin-top: 35px;
+}
+*/
+
+
+
+/*data general del tiempo*/
+
+.weather_general_data{
+    display: block;
+    color: #fff;
+    font-family: "TT Commons Light";
+    margin-top: 120.6%;
+    height: 142.9px;
+}
+
+    /*descripcion del viento*/
+.description_wind{
+    font-weight: 10;
+    margin-top: -43px;
+    margin-left: 23px;
+    font-size: 23px;
+    letter-spacing: 3px;
+}
+
+    /*descripcion del cielo*/
+.description_sky{
+    font-weight: 10;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+
+.sky_img{
+    position: fixed;
+    width: 50px;
+    margin-left: 26.5%;
+}
+
+
+
+
+
+
+    /*temperatura*/
+.temp{
+    margin-left: 57%;
+    margin-top: -80px;
+    font-size: 95px;
+}
+
+
+
+/*detalles del clima*/
+
+.weather_ditails{
+    height: 30px;
+    margin-top: -35%;
+    font-size: 25px;
+    width: 50%;
+}
+
+.wind_speed{
+    margin-left: 10px;
+}
+
+
+.humiditi_value{
+    margin-left: 30px;
+}
+
+
+.humidity_img{
+    position: fixed;
+    width: 30px;
+}
+
+
+
+.temp_img{
+    position: fixed;
+    width: 100px;
+    margin-top: -20%;
+    margin-left: 75%;
+}
+
+
+
+
+
+
+
+
