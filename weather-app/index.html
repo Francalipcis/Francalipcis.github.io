@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel='icon' href='./icons/favicon_weather.ico' type='' >  
+
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/body.css">
+    <link rel="stylesheet" href="./styles/pronostico.css">
+
+    <title>Wheather map to day</title>
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <h5 id="country" class="country"></h5>
+        </div>
+    </header>
+
+
+
+    <!--detalles de: humedad velocidad del viento y precipiraciones-->
+    <div class="sky_div">
+        <img src="" alt="" id="sky_img" class="sky_img">
+        <h3 id="sky_description" class="description_sky">Sunny</h3>
+    </div>
+        
+    <div class="temp_div">
+        <img src="./icons/warm.png" alt="" class="temp_img" id="temp_img">
+        <h2 id="temp" class="temp">29</h2>
+    </div>
+
+    <h3 id="description_wind" class="description_wind">weak wind</h3>
+
+    <div class="weather_ditails">
+        <img src="./icons/humidity.png" alt="" class="humidity_img">
+        <h8 id="humiditi" class="humiditi_value">30</h8>
+        <h8 id="wind_speed" class="wind_speed">40 k/h</h8>
+
+
+        <img src="./icons/precipitation.png" alt="" class="precipitate_img">
+        <h8 id="precipitate" class="precipitate">30%</h8>
+    </div>
+
+
+    <!--pronostico-->
+<div class="pronostico_container">
+
+    <h4 id="fecha_card1" class="fecha_c">3/3/2020</h4>
+    <div class="card1">
+        <img src="./icons/10d.png" alt="" class="img_card" id="img_c_1">
+        <h5 id="temp_c_1" class="temp_card">temp:30</h5>
+        <h5 id="humidity_c_1" class=" humidity_card">humidity:10%</h5>
+        <h5 id="chance_c_1" class="change_card">rain chance: 2%</h5>
+    </div>
+
+    <h4 id="fecha_card2" class="fecha_c">3/3/2020</h4>
+    <div class="card2">
+        <img src="./icons/10d.png" alt="" class="img_card" id="img_c_2">
+        <h5 id="temp_c_2" class="temp_card">temp:30</h5>
+        <h5 id="humidity_c_2" class=" humidity_card">humidity:10%</h5>
+        <h5 id="chance_c_2" class="change_card">rain chance: 2%</h5>
+    </div>
+
+    <h4 id="fecha_card3" class="fecha_c">3/3/2020</h4>
+    <div class="card3">
+        <img src="./icons/10d.png" alt="" class="img_card" id="img_c_3">
+        <h5 id="temp_c_3" class="temp_card">temp:30</h5>
+        <h5 id="humidity_c_3" class=" humidity_card">humidity:10%</h5>
+        <h5 id="chance_c_3" class="change_card">rain chance: 2%</h5>
+    </div>
+
+    
+
+
+</div>
+
+
+
+
+
+
+<script src="./app/main.js"></script>    
+<script src="./app/pronostico.js"></script>
+</body>
+</html>
+
+
+
+<!-- Animation <box-icon name='down-arrow' type='solid' animation='tada' ></box-icon> -->
+<!-- None Animation <box-icon name='down-arrow' type='solid' ></box-icon>-->
