@@ -1,10 +1,23 @@
-/**card 1**/
+/**Pronostico Container**/
+.pronostico_container{
+    margin-top: -5%;
+}
 
+
+.pronostico_container h2{
+    display: inline-block;
+    position: absolute;
+    margin-top: 83%;
+}
+
+
+
+/**card 1**/
 #fecha_card1{
     display: inline-block;
     position: absolute;
     margin-top: 94%;
-    margin-left: 20px;
+    margin-left: 18%;
 }
 
 .img_card{
@@ -21,7 +34,7 @@
     position: absolute;
     background-color: oldlace;
     width: 95%;
-    height: 40px;
+    height: 33px;
     margin-top: 100%;
     color: black;
 }
@@ -31,7 +44,7 @@
     display: inline-block;
     position: absolute;
     margin-left: 70px;
-    margin-top: 15px;
+    margin-top: 5px;
 
 }
 
@@ -39,14 +52,14 @@
     display: inline-block;
     position: absolute;
     margin-left: 145px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .change_card{
     display: inline-block;
     position: absolute;
     margin-left: 240px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 
@@ -55,16 +68,10 @@
 #fecha_card2{
     display: inline-block;
     position: absolute;
-    margin-top: 114%;
-    margin-left: 20px;
+    margin-top: 110%;
+    margin-left: 18%;
 }
-.img_card{
-    display: inline-block;
-    position:absolute;
-    width: 80px;
-    margin-top: -18px;
-    margin-left: -20px;
-}
+
 
 
 .card2{
@@ -72,49 +79,17 @@
     position: absolute;
     background-color: oldlace;
     width: 95%;
-    height: 40px;
-    margin-top: 120%;
+    height: 30px;
+    margin-top: 115%;
     color: black;
 }
-
-
-.temp_card{
-    display: inline-block;
-    position: absolute;
-    margin-left: 70px;
-    margin-top: 15px;
-
-}
-
-.humidity_card{
-    display: inline-block;
-    position: absolute;
-    margin-left: 145px;
-    margin-top: 15px;
-}
-
-.change_card{
-    display: inline-block;
-    position: absolute;
-    margin-left: 240px;
-    margin-top: 15px;
-}
-
-
 
 /**card 3**/
 #fecha_card3{
     display: inline-block;
     position: absolute;
-    margin-top: 134%;
-    margin-left: 20px;
-}
-.img_card{
-    display: inline-block;
-    position:absolute;
-    width: 80px;
-    margin-top: -18px;
-    margin-left: -20px;
+    margin-top: 124%;
+    margin-left: 18%;
 }
 
 
@@ -123,30 +98,49 @@
     position: absolute;
     background-color: oldlace;
     width: 95%;
-    height: 40px;
-    margin-top: 140%;
+    height: 30px;
+    margin-top: 130%;
     color: black;
 }
 
 
-.temp_card{
+
+/**card 4**/
+#fecha_card4{
     display: inline-block;
     position: absolute;
-    margin-left: 70px;
-    margin-top: 15px;
-
+    margin-top: 139%;
+    margin-left: 18%;
 }
 
-.humidity_card{
+.card4{
     display: inline-block;
     position: absolute;
-    margin-left: 145px;
-    margin-top: 15px;
+    background-color: oldlace;
+    width: 95%;
+    height: 30px;
+    margin-top: 145%;
+    color: black;
 }
 
-.change_card{
+
+
+/**card 5**/
+#fecha_card5{
     display: inline-block;
     position: absolute;
-    margin-left: 240px;
-    margin-top: 15px;
+    margin-top: 154%;
+    margin-left: 18%;
 }
+
+
+.card5{
+    display: inline-block;
+    position: absolute;
+    background-color: oldlace;
+    width: 95%;
+    height: 30px;
+    margin-top: 160%;
+    color: black;
+}
+

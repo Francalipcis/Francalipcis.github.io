@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    const apiKey = "49c60457d616bfc98ae64346d1c7205c"
+    const apiKey = "85458e89766b4083977dd960028c5c97"
     let long;
     let lat;
 
@@ -26,7 +26,20 @@ window.addEventListener('load', () => {
         let chance_3 = document.getElementById("chance_c_3");
 
 
+            //card 4
+        let fecha4 = document.getElementById("fecha_card4");
+        let temp_4 = document.getElementById("temp_c_4");
+        let humidity_4 = document.getElementById("humidity_c_4");
+        let chance_4 = document.getElementById("chance_c_4");
 
+
+            //card 5
+        let fecha5 = document.getElementById("fecha_card5");
+        let temp_5 = document.getElementById("temp_c_5");
+        let humidity_5 = document.getElementById("humidity_c_5");
+        let chance_5 = document.getElementById("chance_c_5");
+
+        
 
 
     if(navigator.geolocation){
@@ -38,7 +51,7 @@ window.addEventListener('load', () => {
 
 
             const proxi = 'https://cors-anywhere.herokuapp.com/'
-            const api = `${proxi}api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&units=metric&appid=${apiKey}`
+            const api = `https://api.weatherbit.io/v2.0/forecast/daily?&lat=${lat}&lon=${long}&key=${apiKey}&days=7&lang=es`
      
 
             fetch(api)
@@ -49,37 +62,69 @@ window.addEventListener('load', () => {
                 console.log(data);
 
                 //Card1
-                fecha1.textContent = data.list[3].dt_txt;
+                fecha1.textContent = data.data[1].datetime;
 
-                temp_1.textContent = Math.round(data.list[3].main.temp) + "C°";
+                temp_1.textContent = Math.round(data.data[1].temp) + "C°";
 
-                humidity_1.textContent = "humidity: " + data.list[3].main.humidity + "%";
+                humidity_1.textContent = "precip: " + data.data[1].precip + "%";
 
-                chance_1.textContent = data.list[3].weather[0].description;
+                chance_1.textContent = data.data[1].weather.description;
 
-                document.getElementById("img_c_1").src=`./icons/${data.list[3].weather[0].icon}.png`;
+                //document.getElementById("img_c_1").src=`./icons/${data.list[1].weather[0].icon}.png`;
+
+                    //resolver el tema de los iconos con los codigos de la api
 
 
                 //fecha2
-                fecha2.textContent = data.list[11].dt_txt;
-                temp_2.textContent = Math.round(data.list[7].main.temp) + "C°";
+                fecha2.textContent = data.data[2].datetime;
 
-                humidity_2.textContent = "humidity: " + data.list[7].main.humidity + "%";
+                temp_2.textContent = Math.round(data.data[1].temp) + "C°";
 
-                chance_2.textContent = data.list[7].weather[0].description;
+                humidity_2.textContent = "precip: " + data.data[2].precip + "%";
 
-                document.getElementById("img_c_2").src=`./icons/${data.list[11].weather[0].icon}.png`;
+                chance_2.textContent = data.data[2].weather.description;
+
+                //document.getElementById("img_c_1").src=`./icons/${data.list[2].weather[0].icon}.png`;
 
 
                 //fecha3
-                fecha3.textContent = data.list[19].dt_txt;
-                temp_3.textContent = Math.round(data.list[15].main.temp) + "C°";
+                fecha3.textContent = data.data[3].datetime;
 
-                humidity_3.textContent = "humidity: " + data.list[15].main.humidity + "%";
+                temp_3.textContent = Math.round(data.data[3].temp) + "C°";
 
-                chance_3.textContent = data.list[15].weather[0].description;
+                humidity_3.textContent = "precip: " + data.data[3].precip + "%";
+
+                chance_3.textContent = data.data[3].weather.description;
+
+                //document.getElementById("img_c_1").src=`./icons/${data.list[3].weather[0].icon}.png`;
             
-                document.getElementById("img_c_3").src=`./icons/${data.list[19].weather[0].icon}.png`;
+
+
+                //fecha4
+                fecha4.textContent = data.data[4].datetime;
+
+                temp_4.textContent = Math.round(data.data[4].temp) + "C°";
+
+                humidity_4.textContent = "precip: " + data.data[4].precip + "%";
+
+                chance_4.textContent = data.data[4].weather.description;
+
+                //document.getElementById("img_c_1").src=`./icons/${data.list[4].weather[0].icon}.png`;
+
+
+                //fecha5
+                fecha5.textContent = data.data[5].datetime;
+
+                temp_5.textContent = Math.round(data.data[5].temp) + "C°";
+
+                humidity_5.textContent = "precip: " + data.data[5].precip + "%";
+
+                chance_5.textContent = data.data[5].weather.description;
+
+                //document.getElementById("img_c_1").src=`./icons/${data.list[5].weather[0].icon}.png`;
+
+
+                
             
             
             
