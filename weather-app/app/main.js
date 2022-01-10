@@ -41,7 +41,7 @@ window.addEventListener('load', () => {
 
             const proxi = 'https://cors-anywhere.herokuapp.com/'
 
-            const api = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${long}&aqi=yes`
+            const api = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${long}&lang=es&aqi=yes`
 
 
             fetch(api)
@@ -81,25 +81,25 @@ window.addEventListener('load', () => {
                 
                 //cambia el mensage de el id "description_wind" dependiendo la velosidad del viento
                 if(wind_kph <= 1){
-                    description_wind.textContent = "Calm";
+                    description_wind.textContent = "calma";
                 }else if(between(wind_kph, 2, 11)){
-                    description_wind.textContent = "Weak breeze";
+                    description_wind.textContent = "Brisa muy débil";
                 }else if(between(wind_kph, 12, 28)){
-                    description_wind.textContent = "Moderate breeze";
+                    description_wind.textContent = "Brisa Moderada";
                 }else if(between(wind_kph, 29, 38)){
-                    description_wind.textContent = "Fresh breeze";
+                    description_wind.textContent = "Brisa Fresca";
                 }else if(between(wind_kph, 39, 49)){
-                    description_wind.textContent = "Strong breeze";
+                    description_wind.textContent = "Brisa Fuerte";
                 }else if(between(wind_kph, 50, 61)){
-                    description_wind.textContent = "Strong wind";
+                    description_wind.textContent = "Viento Fuerte";
                 }else if(between(wind_kph, 62, 74)){
-                    description_wind.textContent = "Temporary";
+                    description_wind.textContent = "Temporal";
                 }else if(between(wind_kph, 75, 88)){
-                    description_wind.textContent = "Strong temporary";
+                    description_wind.textContent = "Temporal Fuerte";
                 }else if(between(wind_kph, 89, 117)){
-                    description_wind.textContent = "Very hard temporary";
+                    description_wind.textContent = "Temporal muy fuerte";
                 }else if(wind_kph >= 118){
-                    description_wind.textContent = "Hurricane storm";
+                    description_wind.textContent = "Vientos Huracanados";
                 }
                 
                 
