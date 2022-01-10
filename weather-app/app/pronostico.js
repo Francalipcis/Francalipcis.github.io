@@ -73,7 +73,7 @@ window.addEventListener('load', () => {
 
                 //fecha3
                 fecha3.textContent = data.list[19].dt_txt;
-                temp_3.textContent = "temp: " + Math.round(data.list[15].main.temp) + "C°";
+                temp_3.textContent = Math.round(data.list[15].main.temp) + "C°";
 
                 humidity_3.textContent = "humidity: " + data.list[15].main.humidity + "%";
 
