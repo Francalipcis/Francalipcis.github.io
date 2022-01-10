@@ -4,7 +4,10 @@ body{
     font-family:"TT Commons Light";
 
     align-items: center;
-    overflow: hidden;
+    /*data*/
+    color: #fff;
+    font-family: "TT Commons Light";
+
 }
 
 
@@ -13,35 +16,20 @@ body{
     src: url("../fonts/TT\ Commons\ Light.otf");
 }
 
+
+
+
 /*generales description sky & description wind*/
+.wind_div{
+    display: inline-block;
+    position: absolute;
+    margin-top: 10%;
+}
+
 .description_div{
     color: #fff;
 }
 
-
-
-/*
-.description_sky{
-    margin-left: 38%;
-    margin-top: 35px;
-}
-*/
-
-
-
-/*data general del tiempo*/
-
-.weather_general_data{
-    position:absolute;
-    color: #fff;
-    font-family: "TT Commons Light";
-    padding: 0%;
-    margin-top: 100.6%;
-    margin-left: 2%;
-    margin-bottom: 0%;
-    width: 330.7px;
-    height: 140px;
-}
 
     /*descripcion del viento*/
 .description_wind{
@@ -55,6 +43,16 @@ body{
 }
 
     /*descripcion del cielo*/
+
+.sky_div{
+    display: inline-block;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 0%;
+    width: 120px;
+}
+
+
 .description_sky{
     position: absolute;
     display:inline-block;
@@ -68,9 +66,9 @@ body{
 .sky_img{
     display: inline-block;
     position: absolute;
-    margin-top: 6%;
+    margin-top: 10%;
     width: 50px;
-    margin-left: 40.5%;
+    margin-left: 90%;
 }
 
 
@@ -79,21 +77,31 @@ body{
 
 
 /*temperatura*/
+
+.temp_div{
+    display: inline-block;
+    position: absolute;
+    width: 175px;
+    height: 155px;
+    margin-top: 25%;
+    margin-left: 160px;
+}
+
 .temp{
     position: absolute;
     display: inline-block;
-    margin-left: 54%;
-    margin-top: 15px;
+    margin-left: 0%;
+    margin-top: 0%;
     margin-bottom: 0px;
-    font-size: 100px;
+    font-size: 120px;
 }
 
 .temp_img{
     position: absolute;
     display: inline-block;
     width: 100px;
-    margin-top: 27px;
-    margin-left: 72%;
+    margin-top: 15%;
+    margin-left: 52%;
 }
 
 
@@ -103,14 +111,14 @@ body{
 .weather_ditails{
     position: absolute;
     display: inline-block;
-    height: 30px;
-    margin-top: 27%;
+    height: 70px;
+    margin-left: 0%;
+    margin-top: 35%;
     font-size: 25px;
     width: 50%;
 }
 
 .wind_speed{
-
     margin-left: 10px;
 }
 
@@ -125,6 +133,23 @@ body{
     position:absolute;
     width: 30px;
 }
+
+
+.precipitate{
+    display: inline-block;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -50%;
+}
+
+.precipitate_img{
+    display: inline-block;
+    position:absolute;
+    width: 30px;
+    margin-top: 20%;
+    margin-left: -67%;
+}
+
 
 
 

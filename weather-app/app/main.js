@@ -12,6 +12,9 @@ window.addEventListener('load', () => {
 
     let temperature = document.getElementById('temp');
     let humiditi = document.getElementById('humiditi');
+    let Precipitate = document.getElementById('precipitate');
+
+
 
     let Country = document.getElementById('country'); 
     let City = document.getElementById('city');
@@ -20,6 +23,11 @@ window.addEventListener('load', () => {
 
     let wind_speed = document.getElementById('wind_speed');
     let description_wind = document.getElementById('description_wind');
+
+
+
+
+
 
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position =>{
@@ -42,7 +50,7 @@ window.addEventListener('load', () => {
             })
             .then(data =>{  //recolectando informacion del JSON
                 console.log(data);
-                const {cloud, humidity, temp_c, wind_kph} = data.current;
+                const {cloud, humidity, temp_c, wind_kph, precip_mm} = data.current;
                 const {text} = data.current.condition;
                 const {tz_id} = data.location
 
@@ -60,6 +68,9 @@ window.addEventListener('load', () => {
                 //humedad
                 humiditi.textContent = humidity;
                 
+                //precipitaciones
+                Precipitate.textContent = precip_mm;
+
                 //temperatura
                 temperature.textContent = Math.round(temp_c);
                 
@@ -106,62 +117,45 @@ window.addEventListener('load', () => {
                 
                 
                 //cambia la imagen del #sky dependiendo la hora
-                if (to_day.getHours() >= 4 && to_day.getHours() <= 6){
-                    if(cloud >= 100){
-                        if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/rainy";
-                        }else{
-                            document.getElementById('sky_img').src="./icons/cloudy";
-                        }
-                    }else{
-                        if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/rainy";
-                        }else{
-                            document.getElementById('sky_img').src="./icons/sunrise.png";
-                        }
-                    }
-                }
-                if (to_day.getHours() >= 6 && to_day.getHours() <= 18){
+                if (data.current.condition.icon == "//cdn.weatherapi.com/weather/64x64/day/113.png"){
                     
                     if(cloud >= 100){
                         if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/rainy";
+                            document.getElementById('sky_img').src="./icons/10d.png";
                         }else{
-                            document.getElementById('sky_img').src="./icons/cloudy";
+                            document.getElementById('sky_img').src="./icons/04.png";
                         }
                     }else{
                         if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/rainy";
+                            document.getElementById('sky_img').src="./icons/10d.png";
                         }else{
-                            document.getElementById('sky_img').src="./icons/sun.png";
+                            document.getElementById('sky_img').src="./icons/01d.png";
+                            console.log("tarde");
                         }
+
                     }
                     
                 }
                 
-                if (to_day.getHours() >= 18 && to_day.getHours() <= 4){
+                if (data.current.condition.icon == "//cdn.weatherapi.com/weather/64x64/night/113.png"){
                     
                     if(cloud >= 100){
                         if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/rainy";
+                            document.getElementById('sky_img').src="./icons/10d.png";
                         }else{
-                            document.getElementById('sky_img').src="./icons/cloud-night.png";
+                            document.getElementById('sky_img').src="./icons/04.png";
                         }
                     }else{
                         if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/rainy";
+                            document.getElementById('sky_img').src="./icons/10d.png";
                         }else{
-                            document.getElementById('sky_img').src="./icons/night.png";
+                            document.getElementById('sky_img').src="./icons/01n.png";
+                            console.log("noche");
                         }
                     }
                 }
 
                 
-
-
-
-
-
 
 
 
