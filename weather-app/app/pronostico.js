@@ -64,75 +64,64 @@ window.addEventListener('load', () => {
                 //Card1
                 fecha1.textContent = data.data[1].datetime;
 
-                temp_1.textContent = Math.round(data.data[1].temp) + "C°";
+                temp_1.textContent = Math.round(data.data[1].max_temp) + "C°";
 
                 humidity_1.textContent = "precip: " + data.data[1].precip + "%";
 
                 chance_1.textContent = data.data[1].weather.description;
 
-                //document.getElementById("img_c_1").src=`./icons/${data.list[1].weather[0].icon}.png`;
-
+                document.getElementById("img_c_1").src=`./icons/${data.data[1].weather.icon}.png`;
                     //resolver el tema de los iconos con los codigos de la api
 
 
                 //fecha2
                 fecha2.textContent = data.data[2].datetime;
 
-                temp_2.textContent = Math.round(data.data[1].temp) + "C°";
+                temp_2.textContent = Math.round(data.data[2].max_temp) + "C°";
 
                 humidity_2.textContent = "precip: " + data.data[2].precip + "%";
 
                 chance_2.textContent = data.data[2].weather.description;
 
-                //document.getElementById("img_c_1").src=`./icons/${data.list[2].weather[0].icon}.png`;
+                document.getElementById("img_c_2").src=`./icons/${data.data[2].weather.icon}.png`;
 
 
                 //fecha3
                 fecha3.textContent = data.data[3].datetime;
 
-                temp_3.textContent = Math.round(data.data[3].temp) + "C°";
+                temp_3.textContent = Math.round(data.data[3].max_temp) + "C°";
 
                 humidity_3.textContent = "precip: " + data.data[3].precip + "%";
 
                 chance_3.textContent = data.data[3].weather.description;
 
-                //document.getElementById("img_c_1").src=`./icons/${data.list[3].weather[0].icon}.png`;
-            
+                document.getElementById("img_c_3").src=`./icons/${data.data[3].weather.icon}.png`;
 
 
                 //fecha4
                 fecha4.textContent = data.data[4].datetime;
 
-                temp_4.textContent = Math.round(data.data[4].temp) + "C°";
+                temp_4.textContent = Math.round(data.data[4].max_temp) + "C°";
 
                 humidity_4.textContent = "precip: " + data.data[4].precip + "%";
 
                 chance_4.textContent = data.data[4].weather.description;
 
-                //document.getElementById("img_c_1").src=`./icons/${data.list[4].weather[0].icon}.png`;
+                document.getElementById("img_c_4").src=`./icons/${data.data[4].weather.icon}.png`;
 
 
                 //fecha5
                 fecha5.textContent = data.data[5].datetime;
 
-                temp_5.textContent = Math.round(data.data[5].temp) + "C°";
+                temp_5.textContent = Math.round(data.data[5].max_temp) + "C°";
 
                 humidity_5.textContent = "precip: " + data.data[5].precip + "%";
 
                 chance_5.textContent = data.data[5].weather.description;
 
-                //document.getElementById("img_c_1").src=`./icons/${data.list[5].weather[0].icon}.png`;
-
+                document.getElementById("img_c_5").src=`./icons/${data.data[5].weather.icon}.png`;
 
                 
-            
-            
-            
-            
-            
-            
-            
-            
             
             })
         

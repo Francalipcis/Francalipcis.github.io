@@ -25,8 +25,12 @@ window.addEventListener('load', () => {
     let description_wind = document.getElementById('description_wind');
 
 
-
-
+    let us_epa_index = document.getElementById('us_epa_index');
+    let Co = document.getElementById('co');
+    let No2 = document.getElementById('no2');
+    let O3 = document.getElementById('o3');
+    let So2 = document.getElementById('so2');
+    
 
 
     if(navigator.geolocation){
@@ -51,6 +55,7 @@ window.addEventListener('load', () => {
             .then(data =>{  //recolectando informacion del JSON
                 console.log(data);
                 const {cloud, humidity, temp_c, wind_kph, precip_mm} = data.current;
+                const {co, no2, o3, so2} = data.current.air_quality;
                 const {text} = data.current.condition;
                 const {tz_id} = data.location
 
@@ -76,8 +81,16 @@ window.addEventListener('load', () => {
                 
                 //velocidad del viento
                 wind_speed.textContent = wind_kph + "K/h";
+
+                //calidad del aire
+                us_epa_index.textContent = data.current.air_quality["us-epa-index"];
                 
+                Co.textContent = "co: " + Math.trunc(co);
+                No2.textContent = "no2: " + Math.trunc(no2);
+                O3.textContent = "o3: " + Math.trunc(o3);
+                So2.textContent = "so2: " + Math.trunc(so2);
                 
+
                 
                 //cambia el mensage de el id "description_wind" dependiendo la velosidad del viento
                 if(wind_kph <= 1){
@@ -121,36 +134,34 @@ window.addEventListener('load', () => {
                     
                     if(cloud >= 100){
                         if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/10d.png";
+                            document.getElementById('sky_img').src="./icons/r01d.png";
                         }else{
-                            document.getElementById('sky_img').src="./icons/04.png";
+                            document.getElementById('sky_img').src="./icons/c04d.png";
                         }
                     }else{
                         if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/10d.png";
+                            document.getElementById('sky_img').src="./icons/r01d.png";
                         }else{
-                            document.getElementById('sky_img').src="./icons/01d.png";
+                            document.getElementById('sky_img').src="./icons/c01d.png";
                             console.log("tarde");
                         }
 
                     }
                     
-                }
-                
-                if (data.current.condition.icon == "//cdn.weatherapi.com/weather/64x64/night/113.png"){
-                    
+                }else if (data.current.condition.icon == "//cdn.weatherapi.com/weather/64x64/night/113.png"){
+
                     if(cloud >= 100){
                         if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/10d.png";
+                            document.getElementById('sky_img').src="./icons/r01n.png";
                         }else{
-                            document.getElementById('sky_img').src="./icons/04.png";
+                            document.getElementById('sky_img').src="./icons/c04n.png";
                         }
                     }else{
                         if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/10d.png";
+                            document.getElementById('sky_img').src="./icons/r01n.png";
                         }else{
-                            document.getElementById('sky_img').src="./icons/01n.png";
-                            console.log("noche");
+                            document.getElementById('sky_img').src="./icons/c01n.png";
+                            console.log("tarde");
                         }
                     }
                 }

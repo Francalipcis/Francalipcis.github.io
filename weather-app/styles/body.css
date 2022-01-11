@@ -68,7 +68,7 @@ body{
     position: absolute;
     margin-top: 10%;
     width: 50px;
-    margin-left: 120%;
+    margin-left: 170%;
 }
 
 
@@ -111,7 +111,7 @@ body{
 .weather_ditails{
     position: absolute;
     display: inline-block;
-    height: 70px;
+    height: 20%;
     margin-left: 0%;
     margin-top: 35%;
     font-size: 25px;
@@ -151,9 +151,115 @@ body{
 }
 
 
+/*ver mas lincks*/
+
+    /*pronostico ver mas*/
+.ver_mas_pronostics{
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    margin-top: 87%;
+    margin-left: 28%;
+    font-size: 16px;
+}
+
+
+.ver_mas_pronostics img{
+    width: 10px;
+    transform: rotate(-90deg);
+}
+
+
+    /*ver mas Weather*/
+.ver_mas_weather{
+    text-decoration: none;
+    color: #fff;
+}
 
 
 
+
+/*calidad de aire*/
+.calidad_de_aire{
+    display: inline-block;
+    position: absolute;
+    width: 60%;
+    margin-left: 40%;
+    margin-top: 63%;
+}
+
+.calidad_del_aire_title{
+    display: inline-block;
+    position: absolute;
+    font-size: 20px;
+    margin-left: 2%;
+    margin-top: 0%;
+}
+
+
+    /*hexagono*/
+.hex_div{
+    margin-left: 17%;
+    margin-top: 13%;
+    width: 70%;
+    height: 100px;
+}
+
+
+.us_epa_index{
+    display: inline-block;
+    position: absolute;
+    font-size: 35px;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+
+.border_hex{
+    display: inline-block;
+    position: absolute;
+    width: 25%;
+    margin-left: 0%;
+}
+
+
+
+
+
+
+    /*datos de cañidad de aire*/
+.calidad_del_aire_div{
+    display: inline-block;
+    position: absolute;
+    font-size: 100%;
+    height: 30%;
+    width: 50%;
+    margin-top: -40%;
+    margin-left: 50%;
+}
+
+.no2{
+    display: inline-block;
+    position: absolute;
+    margin-left: 7%;
+}
+
+
+.o3{
+    display: inline-block;
+    position: absolute;
+    margin-top: 15.7%;
+    margin-left: -45%;
+}
+
+
+
+.so2{
+    display: inline-block;
+    position: absolute;
+    margin-top: 15.7%;
+    margin-left: 0%;
+}
 
 
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel='icon' href='./icons/favicon_weather.ico' type='' >  
+    <link rel='icon' href='./favicon/favicon_weather.ico' type='' >  
 
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/body.css">
@@ -36,20 +36,47 @@
 
     <h3 id="description_wind" class="description_wind">weak wind</h3>
 
-    <div class="weather_ditails">
-        <img src="./icons/humidity.png" alt="" class="humidity_img">
-        <h8 id="humiditi" class="humiditi_value">30</h8>
-        <h8 id="wind_speed" class="wind_speed">40 k/h</h8>
 
 
-        <img src="./icons/precipitation.png" alt="" class="precipitate_img">
-        <h8 id="precipitate" class="precipitate">30%</h8>
+
+    <a href="#" class="ver_mas_weather">
+        <div class="weather_ditails">
+            <img src="./icons/humidity.png" alt="" class="humidity_img">
+            <h8 id="humiditi" class="humiditi_value">30</h8>
+            <h8 id="wind_speed" class="wind_speed">40 k/h</h8>
+    
+    
+            <img src="./icons/precipitation.png" alt="" class="precipitate_img">
+            <h8 id="precipitate" class="precipitate">30%</h8>
+        </div>
+    </a>
+
+
+<div class="calidad_de_aire">
+        <h2 class="calidad_del_aire_title">Calidad Del Aire</h2>
+        <div class="hex_div">
+        <img src="./icons/hex.png" alt="" class="border_hex">
+        <h8 id="us_epa_index" class="us_epa_index"></h8>
     </div>
+    <div class="calidad_del_aire_div">
+        <h8 id="co" class="co">CO: 227</h8>
+        <h8 id="no2" class="no2"></h8>
+        <h8 id="o3" class="o3">03: 0.2</h8>
+        <h8 id="so2" class="so2">so2: 3</h8>
+    </div>
+</div>
+
+
+
+
+
+
 
 
     <!--pronostico-->
 <div class="pronostico_container">
-    <h2>Pronostico extendido</h2>
+    <h2>Pronostico</h2>
+    <a href="#" class="ver_mas_pronostics">Ver Mas <img src="./icons/arrow.svg" alt="" class="arrow_ver mas"></box-icon></a>
 
 
 
@@ -104,6 +131,7 @@
 
 <script src="./app/main.js"></script>    
 <script src="./app/pronostico.js"></script>
+
 </body>
 </html>
 
