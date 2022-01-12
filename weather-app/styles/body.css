@@ -16,6 +16,23 @@ body{
 }
 
 
+.input_country{
+    margin-top:5%;
+    width: 30%;
+    height: 30%;
+}
+#C_inputButton{
+    margin-top:5%;
+    height: 43%;
+    width: 6%;
+    background: transparent;
+    border: none;
+}
+#C_inputButton img{
+    margin-top: -40%;
+}
+
+
 
 
 /*generales description sky & description wind*/
@@ -158,8 +175,10 @@ body{
     position: absolute;
     color: #fff;
     margin-top: 87%;
-    margin-left: 38%;
+    margin-left: 28%;
     font-size: 16px;
+    background: transparent;
+    border: none;
 }
 
 
@@ -167,24 +186,6 @@ body{
     width: 10px;
     transform: rotate(-90deg);
 }
-
-
-.verPronostics2{
-    display: inline-block;
-    position: absolute;
-    color: #fff;
-    margin-top: 87%;
-    margin-left: 28%;
-    font-size: 16px;
-}
-
-
-.verPronostics2 img{
-    width: 10px;
-    transform: rotate(90deg);
-}
-
-
 
 
 
