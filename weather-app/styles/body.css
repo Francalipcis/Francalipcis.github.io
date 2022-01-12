@@ -1,8 +1,8 @@
 body{
 /*    background: linear-gradient(to bottom, #00c3ff, #00FFFF, #339cc2);*/
-    background-image: url("../bakground/bg.jpg");
+    background-image: url("../img/bakground/bg.jpg");
     font-family:"TT Commons Light";
-
+    overflow: hidden;
     align-items: center;
     /*data*/
     color: #fff;
@@ -154,7 +154,23 @@ body{
 /*ver mas lincks*/
 
     /*pronostico ver mas*/
-.ver_mas_pronostics{
+.ver_mas_pronostics1{
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    margin-top: 87%;
+    margin-left: 38%;
+    font-size: 16px;
+}
+
+
+.ver_mas_pronostics1 img{
+    width: 10px;
+    transform: rotate(-90deg);
+}
+
+
+.ver_mas_pronostics2{
     display: inline-block;
     position: absolute;
     color: #fff;
@@ -164,10 +180,16 @@ body{
 }
 
 
-.ver_mas_pronostics img{
+.ver_mas_pronostics2 img{
     width: 10px;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 }
+
+
+
+
+
+
 
 
     /*ver mas Weather*/
@@ -183,7 +205,7 @@ body{
 .calidad_de_aire{
     display: inline-block;
     position: absolute;
-    width: 60%;
+    width: 56%;
     margin-left: 40%;
     margin-top: 63%;
 }
@@ -233,9 +255,9 @@ body{
     position: absolute;
     font-size: 100%;
     height: 30%;
-    width: 50%;
+    width: 45%;
     margin-top: -40%;
-    margin-left: 50%;
+    margin-left: 45%;
 }
 
 .no2{

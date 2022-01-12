@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel='icon' href='./favicon/favicon_weather.ico' type='' >  
+    <link rel='icon' href='./img/favicon/favicon_weather.ico' type='' >  
 
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/body.css">
@@ -23,107 +23,57 @@
 
 
 
-    <!--detalles de: humedad velocidad del viento y precipiraciones-->
+<!--detalles de: humedad velocidad del viento y precipiraciones-->
     <div class="sky_div">
         <img src="" alt="" id="sky_img" class="sky_img">
         <h3 id="sky_description" class="description_sky">Sunny</h3>
     </div>
-        
+
+<!--temperatura-->
     <div class="temp_div">
-        <img src="./icons/warm.png" alt="" class="temp_img" id="temp_img">
+        <img src="" alt="" class="temp_img" id="temp_img">
         <h2 id="temp" class="temp">29</h2>
     </div>
-
+<!--descripcion del viento-->
     <h3 id="description_wind" class="description_wind">weak wind</h3>
 
-
-
-
+<!--var mas-->
     <a href="#" class="ver_mas_weather">
         <div class="weather_ditails">
-            <img src="./icons/humidity.png" alt="" class="humidity_img">
+            <img src="./img/icons/humidity.png" alt="" class="humidity_img">
             <h8 id="humiditi" class="humiditi_value">30</h8>
             <h8 id="wind_speed" class="wind_speed">40 k/h</h8>
     
     
-            <img src="./icons/precipitation.png" alt="" class="precipitate_img">
+            <img src="./img/icons/precipitation.png" alt="" class="precipitate_img">
             <h8 id="precipitate" class="precipitate">30%</h8>
         </div>
     </a>
 
-
-<div class="calidad_de_aire">
-        <h2 class="calidad_del_aire_title">Calidad Del Aire</h2>
-        <div class="hex_div">
-        <img src="./icons/hex.png" alt="" class="border_hex">
-        <h8 id="us_epa_index" class="us_epa_index"></h8>
+<!--calidad de aire-->
+    <div class="calidad_de_aire">
+            <h2 class="calidad_del_aire_title">Calidad Del Aire</h2>
+            <div class="hex_div">
+            <img src="./img/icons/hex.png" alt="" class="border_hex">
+            <h8 id="us_epa_index" class="us_epa_index"></h8>
+        </div>
+        <div class="calidad_del_aire_div">
+            <h8 id="co" class="co">CO: 227</h8>
+            <h8 id="no2" class="no2"></h8>
+            <h8 id="o3" class="o3">03: 0.2</h8>
+            <h8 id="so2" class="so2">so2: 3</h8>
+        </div>
     </div>
-    <div class="calidad_del_aire_div">
-        <h8 id="co" class="co">CO: 227</h8>
-        <h8 id="no2" class="no2"></h8>
-        <h8 id="o3" class="o3">03: 0.2</h8>
-        <h8 id="so2" class="so2">so2: 3</h8>
-    </div>
-</div>
-
-
-
-
 
 
 
 
     <!--pronostico-->
-<div class="pronostico_container">
+<div class="pronostico_container" id="pronostico_container">
     <h2>Pronostico</h2>
-    <a href="#" class="ver_mas_pronostics">Ver Mas <img src="./icons/arrow.svg" alt="" class="arrow_ver mas"></box-icon></a>
-
-
-
-    <h4 id="fecha_card1" class="fecha_c">3/3/2020</h4>
-    <div class="card1">
-        <img src="" alt="" class="img_card" id="img_c_1">
-        <h5 id="temp_c_1" class="temp_card">temp:30</h5>
-        <h5 id="humidity_c_1" class=" humidity_card">humidity:10%</h5>
-        <h5 id="chance_c_1" class="change_card">rain chance: 2%</h5>
-    </div>
-
-    <h4 id="fecha_card2" class="fecha_c">3/3/2020</h4>
-    <div class="card2">
-        <img src="" alt="" class="img_card" id="img_c_2">
-        <h5 id="temp_c_2" class="temp_card">temp:30</h5>
-        <h5 id="humidity_c_2" class=" humidity_card">humidity:10%</h5>
-        <h5 id="chance_c_2" class="change_card">rain chance: 2%</h5>
-    </div>
-
-    <h4 id="fecha_card3" class="fecha_c">3/3/2020</h4>
-    <div class="card3">
-        <img src="" alt="" class="img_card" id="img_c_3">
-        <h5 id="temp_c_3" class="temp_card">temp:30</h5>
-        <h5 id="humidity_c_3" class=" humidity_card">humidity:10%</h5>
-        <h5 id="chance_c_3" class="change_card">rain chance: 2%</h5>
-    </div>
-
-    <h4 id="fecha_card4" class="fecha_c">3/3/2020</h4>
-    <div class="card4">
-        <img src="" alt="" class="img_card" id="img_c_4">
-        <h5 id="temp_c_4" class="temp_card">temp:30</h5>
-        <h5 id="humidity_c_4" class=" humidity_card">humidity:10%</h5>
-        <h5 id="chance_c_4" class="change_card">rain chance: 2%</h5>
-    </div>
-
-    <h4 id="fecha_card5" class="fecha_c">3/3/2020</h4>
-    <div class="card5">
-        <img src="" alt="" class="img_card" id="img_c_5">
-        <h5 id="temp_c_5" class="temp_card">temp:30</h5>
-        <h5 id="humidity_c_5" class=" humidity_card">humidity:10%</h5>
-        <h5 id="chance_c_5" class="change_card">rain chance: 2%</h5>
-    </div>
-
-
-
+    <button class="ver_mas_pronostics1" id="ver_mas_pronostics1"><img src="./img/icons/arrow.svg" alt="" class="arrow_ver_mas"></box-icon></button>
+    <button class="ver_mas_pronostics2" id="ver_mas_pronostics2"><img src="./img/icons/arrow.svg" alt="" class="arrow_ver_mas"></box-icon></button>
 </div>
-
 
 
 

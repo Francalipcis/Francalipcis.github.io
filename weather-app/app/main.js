@@ -119,11 +119,11 @@ window.addEventListener('load', () => {
                 
                 //cambia la imagen de la temperatura dependiendo de la misma
                 if (temp_c >= 28){
-                    document.getElementById('temp_img').src="./icons/hot.png";
+                    document.getElementById('temp_img').src="./img/icons/hot.png";
                 }else if (between(temp_c, 20, 28)){
-                    document.getElementById('temp_img').src="./icons/warm.png";
+                    document.getElementById('temp_img').src="./img/icons/warm.png";
                 }else if (temp_c <= 19 ){
-                    document.getElementById('temp_img').src="./icons/cold.png";
+                    document.getElementById('temp_img').src="./img/icons/cold.png";
                 }
 
 
@@ -134,15 +134,15 @@ window.addEventListener('load', () => {
                     
                     if(cloud >= 100){
                         if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/r01d.png";
+                            document.getElementById('sky_img').src="./img/icons/r01d.png";
                         }else{
-                            document.getElementById('sky_img').src="./icons/c04d.png";
+                            document.getElementById('sky_img').src="./img/icons/c04d.png";
                         }
                     }else{
                         if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/r01d.png";
+                            document.getElementById('sky_img').src="./img/icons/r01d.png";
                         }else{
-                            document.getElementById('sky_img').src="./icons/c01d.png";
+                            document.getElementById('sky_img').src="./img/icons/c01d.png";
                             console.log("tarde");
                         }
 
@@ -152,15 +152,15 @@ window.addEventListener('load', () => {
 
                     if(cloud >= 100){
                         if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/r01n.png";
+                            document.getElementById('sky_img').src="./img/icons/r01n.png";
                         }else{
-                            document.getElementById('sky_img').src="./icons/c04n.png";
+                            document.getElementById('sky_img').src="./img/icons/c04n.png";
                         }
                     }else{
                         if(humidity >= 98){
-                            document.getElementById('sky_img').src="./icons/r01n.png";
+                            document.getElementById('sky_img').src="./img/icons/r01n.png";
                         }else{
-                            document.getElementById('sky_img').src="./icons/c01n.png";
+                            document.getElementById('sky_img').src="./img/icons/c01n.png";
                             console.log("tarde");
                         }
                     }
@@ -181,13 +181,6 @@ window.addEventListener('load', () => {
 
 
 });
-
-
-
-
-
-
-
 
 
 
