@@ -1,0 +1,290 @@
+body{
+/*    background: linear-gradient(to bottom, #00c3ff, #00FFFF, #339cc2);*/
+    background-image: url("../img/bakground/bg.jpg");
+    font-family:"TT Commons Light";
+    overflow: hidden;
+    align-items: center;
+    /*data*/
+    color: #fff;
+    font-family: "TT Commons Light";
+
+}
+
+
+@font-face {
+    font-family: TT Commons Light;
+    src: url("../fonts/TT\ Commons\ Light.otf");
+}
+
+
+
+
+/*generales description sky & description wind*/
+.wind_div{
+    display: inline-block;
+    position: absolute;
+    margin-top: 10%;
+}
+
+.description_div{
+    color: #fff;
+}
+
+
+    /*descripcion del viento*/
+.description_wind{
+    position: absolute;
+    display: inline-block;
+    font-weight: 10;
+    margin-top: 17.5%;
+    margin-left: 23px;
+    font-size: 23px;
+    letter-spacing: 3px;
+}
+
+    /*descripcion del cielo*/
+
+.sky_div{
+    display: inline-block;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 0%;
+    width: 120px;
+}
+
+
+.description_sky{
+    position: absolute;
+    display:inline-block;
+    margin-top: 5%;
+    font-weight: 10;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+
+.sky_img{
+    display: inline-block;
+    position: absolute;
+    margin-top: 10%;
+    width: 50px;
+    margin-left: 170%;
+}
+
+
+
+
+
+
+/*temperatura*/
+
+.temp_div{
+    display: inline-block;
+    position: absolute;
+    width: 175px;
+    height: 155px;
+    margin-top: 25%;
+    margin-left: 160px;
+}
+
+.temp{
+    position: absolute;
+    display: inline-block;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0px;
+    font-size: 120px;
+}
+
+.temp_img{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    margin-top: 15%;
+    margin-left: 52%;
+}
+
+
+
+/*detalles del clima*/
+
+.weather_ditails{
+    position: absolute;
+    display: inline-block;
+    height: 20%;
+    margin-left: 0%;
+    margin-top: 35%;
+    font-size: 25px;
+    width: 50%;
+}
+
+.wind_speed{
+    margin-left: 10px;
+}
+
+
+.humiditi_value{
+    margin-left: 30px;
+}
+
+
+.humidity_img{
+    display: inline-block;
+    position:absolute;
+    width: 30px;
+}
+
+
+.precipitate{
+    display: inline-block;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -50%;
+}
+
+.precipitate_img{
+    display: inline-block;
+    position:absolute;
+    width: 30px;
+    margin-top: 20%;
+    margin-left: -67%;
+}
+
+
+/*ver mas lincks*/
+
+    /*pronostico ver mas*/
+.ver_mas_pronostics1{
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    margin-top: 87%;
+    margin-left: 38%;
+    font-size: 16px;
+}
+
+
+.ver_mas_pronostics1 img{
+    width: 10px;
+    transform: rotate(-90deg);
+}
+
+
+.ver_mas_pronostics2{
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    margin-top: 87%;
+    margin-left: 28%;
+    font-size: 16px;
+}
+
+
+.ver_mas_pronostics2 img{
+    width: 10px;
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+    /*ver mas Weather*/
+.ver_mas_weather{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+/*calidad de aire*/
+.calidad_de_aire{
+    display: inline-block;
+    position: absolute;
+    width: 56%;
+    margin-left: 40%;
+    margin-top: 63%;
+}
+
+.calidad_del_aire_title{
+    display: inline-block;
+    position: absolute;
+    font-size: 20px;
+    margin-left: 2%;
+    margin-top: 0%;
+}
+
+
+    /*hexagono*/
+.hex_div{
+    margin-left: 17%;
+    margin-top: 13%;
+    width: 70%;
+    height: 100px;
+}
+
+
+.us_epa_index{
+    display: inline-block;
+    position: absolute;
+    font-size: 35px;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+
+.border_hex{
+    display: inline-block;
+    position: absolute;
+    width: 25%;
+    margin-left: 0%;
+}
+
+
+
+
+
+
+    /*datos de cañidad de aire*/
+.calidad_del_aire_div{
+    display: inline-block;
+    position: absolute;
+    font-size: 100%;
+    height: 30%;
+    width: 45%;
+    margin-top: -40%;
+    margin-left: 45%;
+}
+
+.no2{
+    display: inline-block;
+    position: absolute;
+    margin-left: 7%;
+}
+
+
+.o3{
+    display: inline-block;
+    position: absolute;
+    margin-top: 15.7%;
+    margin-left: -45%;
+}
+
+
+
+.so2{
+    display: inline-block;
+    position: absolute;
+    margin-top: 15.7%;
+    margin-left: 0%;
+}
+
+
+
+
+
+
