@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
             let to_day = new Date();
 
 
-            const api = `https://api.weatherbit.io/v2.0/forecast/daily?&lat=${lat}&lon=${long}&key=${apiKey}&days=16&lang=es`
+            const api = `https://api.weatherbit.io/v2.0/forecast/daily?&lat=${lat}&lon=${long}&key=${apiKey}&days=11&lang=es`
      
 
             fetch(api)
@@ -73,7 +73,7 @@ window.addEventListener('load', () => {
 
 
 //cambiar de pagina
-document.getElementById('ver_mas_pronostics1').onclick = () => {
+document.getElementById('verPronostics1').onclick = () => {
     
     //agregando
     for(let a = 1; a <= 5; a++){
@@ -97,7 +97,7 @@ document.getElementById('ver_mas_pronostics1').onclick = () => {
 
 
 //volver pagina
-document.getElementById('ver_mas_pronostics2').onclick = () => {
+document.getElementById('verPronostics2').onclick = () => {
     
     //agregando
     for(let b = 5; b <= 10; b++){

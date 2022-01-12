@@ -2,7 +2,6 @@ body{
 /*    background: linear-gradient(to bottom, #00c3ff, #00FFFF, #339cc2);*/
     background-image: url("../img/bakground/bg.jpg");
     font-family:"TT Commons Light";
-    overflow: hidden;
     align-items: center;
     /*data*/
     color: #fff;
@@ -154,7 +153,7 @@ body{
 /*ver mas lincks*/
 
     /*pronostico ver mas*/
-.ver_mas_pronostics1{
+.verPronostics1{
     display: inline-block;
     position: absolute;
     color: #fff;
@@ -164,13 +163,13 @@ body{
 }
 
 
-.ver_mas_pronostics1 img{
+.verPronostics1 img{
     width: 10px;
     transform: rotate(-90deg);
 }
 
 
-.ver_mas_pronostics2{
+.verPronostics2{
     display: inline-block;
     position: absolute;
     color: #fff;
@@ -180,7 +179,7 @@ body{
 }
 
 
-.ver_mas_pronostics2 img{
+.verPronostics2 img{
     width: 10px;
     transform: rotate(90deg);
 }
