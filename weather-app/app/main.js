@@ -1,5 +1,5 @@
 window.addEventListener('load', () =>{
-    const apiKey = "de09f2829c1f439a88b133130220801"
+    const apiKey = "49c60457d616bfc98ae64346d1c7205c"
     let long;
     let lat;
 
@@ -27,11 +27,7 @@ window.addEventListener('load', () =>{
     let description_wind = document.getElementById('description_wind');
 
 
-    let us_epa_index = document.getElementById('us_epa_index');
-    let Co = document.getElementById('co');
-    let No2 = document.getElementById('no2');
-    let O3 = document.getElementById('o3');
-    let So2 = document.getElementById('so2');
+
     
 
 
@@ -40,15 +36,16 @@ window.addEventListener('load', () =>{
             console.log(position);
             long = position.coords.longitude;
             lat = position.coords.latitude;
-            
-            let actual_pos = lat + ", " + long;
-            
-            let to_day = new Date();
+
+
 
 
             const proxi = 'https://cors-anywhere.herokuapp.com/'
 
-            const api = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${actual_pos}&lang=es&aqi=yes`
+            //api 1
+            const api = `${proxi}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric&lang=es`
+
+
 
             console.log(api);
 
@@ -58,75 +55,66 @@ window.addEventListener('load', () =>{
             })
             .then(data =>{  //recolectando informacion del JSON
                 console.log(data);
-                const {cloud, humidity, temp_c, wind_kph, precip_mm} = data.current;
-                const {co, no2, o3, so2} = data.current.air_quality;
-                const {text} = data.current.condition;
-                const {tz_id} = data.location
+                const {description, icon} = data.weather[0];
 
+                const { all } = data.clouds;
 
+                const {humidity, temp} = data.main;
+
+                const {country} = data.sys;
                 
                 //Seteando los elementos del dom de la api
 
                 //definiendo si esta despejado o nublado dependiendo la cantidad de nuves 
-                Description.textContent = text;
-
+                Description.textContent = description;
                 
                 //localisacion
-                Country.textContent = tz_id;
+                Country.textContent = data.name + "/" + country;
                 
                 //humedad
-                humiditi.textContent = humidity;
+                humiditi.textContent = Math.round(humidity);
                 
-                //precipitaciones
-                Precipitate.textContent = precip_mm;
-
                 //temperatura
-                temperature.textContent = Math.round(temp_c);
+                temperature.textContent = Math.round(temp);
                 
                 //velocidad del viento
-                wind_speed.textContent = wind_kph + "K/h";
-
-                //calidad del aire
-                us_epa_index.textContent = data.current.air_quality["us-epa-index"];
-                
-                Co.textContent = "co: " + Math.trunc(co);
-                No2.textContent = "no2: " + Math.trunc(no2);
-                O3.textContent = "o3: " + Math.trunc(o3);
-                So2.textContent = "so2: " + Math.trunc(so2);
+                wind_speed.textContent = data.wind.speed + " K/h";
                 
 
                 
                 //cambia el mensage de el id "description_wind" dependiendo la velosidad del viento
-                if(wind_kph <= 1){
+                let wind_spd = data.wind.speed;
+
+                if(wind_spd <= 1){
                     description_wind.textContent = "calma";
-                }else if(between(wind_kph, 2, 11)){
+                }else if(between(wind_spd, 2, 11)){
                     description_wind.textContent = "Brisa muy débil";
-                }else if(between(wind_kph, 12, 28)){
+                }else if(between(wind_spd, 12, 28)){
                     description_wind.textContent = "Brisa Moderada";
-                }else if(between(wind_kph, 29, 38)){
+                }else if(between(wind_spd, 29, 38)){
                     description_wind.textContent = "Brisa Fresca";
-                }else if(between(wind_kph, 39, 49)){
+                }else if(between(wind_spd, 39, 49)){
                     description_wind.textContent = "Brisa Fuerte";
-                }else if(between(wind_kph, 50, 61)){
+                }else if(between(wind_spd, 50, 61)){
                     description_wind.textContent = "Viento Fuerte";
-                }else if(between(wind_kph, 62, 74)){
+                }else if(between(wind_spd, 62, 74)){
                     description_wind.textContent = "Temporal";
-                }else if(between(wind_kph, 75, 88)){
+                }else if(between(wind_spd, 75, 88)){
                     description_wind.textContent = "Temporal Fuerte";
-                }else if(between(wind_kph, 89, 117)){
+                }else if(between(wind_spd, 89, 117)){
                     description_wind.textContent = "Temporal muy fuerte";
-                }else if(wind_kph >= 118){
+                }else if(wind_spd >= 118){
                     description_wind.textContent = "Vientos Huracanados";
                 }
                 
                 
                 
                 //cambia la imagen de la temperatura dependiendo de la misma
-                if (temp_c >= 28){
+                if (temp >= 28){
                     document.getElementById('temp_img').src="./img/icons/hot.png";
-                }else if (between(temp_c, 20, 28)){
+                }else if (between(temp, 20, 28)){
                     document.getElementById('temp_img').src="./img/icons/warm.png";
-                }else if (temp_c <= 19 ){
+                }else if (temp <= 19 ){
                     document.getElementById('temp_img').src="./img/icons/cold.png";
                 }
 
@@ -134,9 +122,9 @@ window.addEventListener('load', () =>{
                 
                 
                 //cambia la imagen del #sky dependiendo la hora
-                if (data.current.condition.icon == "//cdn.weatherapi.com/weather/64x64/day/113.png"){
+                if (icon == "01d"){
                     
-                    if(cloud >= 100){
+                    if(all >= 100){
                         if(humidity >= 98){
                             document.getElementById('sky_img').src="./img/icons/r01d.png";
                         }else{
@@ -152,9 +140,9 @@ window.addEventListener('load', () =>{
 
                     }
                     
-                }else if (data.current.condition.icon == "//cdn.weatherapi.com/weather/64x64/night/113.png"){
+                }else if (icon == "01n"){
 
-                    if(cloud >= 100){
+                    if(all >= 100){
                         if(humidity >= 98){
                             document.getElementById('sky_img').src="./img/icons/r01n.png";
                         }else{

@@ -9,7 +9,6 @@ window.addEventListener('load', () => {
     //seteando los objetos del DOM para la api
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position =>{
-            console.log(position);
             long = position.coords.longitude;
             lat = position.coords.latitude;
             let to_day = new Date();
