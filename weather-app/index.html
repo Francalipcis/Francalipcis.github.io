@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/body.css">
     <link rel="stylesheet" href="./styles/pronostico.css">
+    <link rel="stylesheet" href="./styles/menu.css">
 
     <title>Wheather map to day</title>
 </head>
@@ -17,13 +18,22 @@
     
     <header>
         <div class="header">
-            <h5 id="country" class="country"></h5>
+            <h3 id="country" class="country"></h3>
+              
+            <button class="menu" id="menu"><img src="./img/icons/menu.svg" alt=""></button>
+            <button class="menu2" id="menu2"><img src="./img/icons/menu.svg" alt=""></button>
         </div>
 
     </header>
 
+    <div class="tab -hide" id="tab">
+        <a href="#" class="linck1">detalles del clima</a>
+        <a href="#" class="linck3">busqueda del clima por ciudad</a>
+        <a href="#" class="linck2">pronostico extendido 16 dias</a>
+    </div>
 
 
+<div class="body-container" id="body-container">
 <!--detalles de: humedad velocidad del viento y precipiraciones-->
     <div class="sky_div">
         <img src="" alt="" id="sky_img" class="sky_img">
@@ -79,10 +89,11 @@
 
 
 
+</div>
 
 <script src="./app/main.js"></script>    
 <script src="./app/pronostico.js"></script>
-
+<script src="./app/menu.js"></script>
 </body>
 </html>
 

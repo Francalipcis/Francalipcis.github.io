@@ -1,0 +1,113 @@
+@font-face {
+    font-family: TT Commons Light;
+    src: url("../fonts/TT\ Commons\ Light.otf");
+}
+
+
+
+.input_country{
+    margin-top:5%;
+    width: 30%;
+    height: 30%;
+}
+#C_inputButton{
+    margin-top:5%;
+    height: 43%;
+    width: 6%;
+    background: transparent;
+    border: none;
+}
+#C_inputButton img{
+    margin-top: -40%;
+}
+
+
+.menu{
+    display: inline-block;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 65%;
+    background-color: transparent;
+    border: none;
+}
+.menu img{
+    width: 30px;
+}
+
+.menu2{
+    display: inline-block;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 65%;
+    background-color: transparent;
+    border: none;
+}
+.menu2 img{
+    width: 30px;
+}
+
+
+.tab{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-left: -10%;
+    margin-top: 5%;
+    width: 107.5%;
+    height: 95.1%;
+    background-color: rgb(254, 243, 230);
+}
+
+
+.-hide{
+    margin-top: -500%;
+    transition: 0.5s;
+}
+
+.-show{
+    margin-top: 5%;
+    transition: 0.5s;
+}
+
+
+
+
+.tab .linck1{
+    display: inline-block;
+    position: absolute;
+    height: 30px;
+    margin-top: 50%;
+    margin-left: 7%;
+    font-family: "TT Commons light";
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+
+.tab .linck2{
+    display: inline-block;
+    position: absolute;
+    height: 30px;
+    margin-top: 90%;
+    margin-left: 7%;
+    font-family: "TT Commons light";
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+.tab .linck3{
+    display: inline-block;
+    position: absolute;
+    height: 30px;
+    margin-top: 70%;
+    margin-left: 7%;
+    font-family: "TT Commons light";
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+}

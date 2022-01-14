@@ -1,9 +1,16 @@
 header{
     display: flex;
+    position: sticky;
     justify-content: center;
     background: linear-gradient(to bottom, rgb(254, 243, 230), #ffffff3f);
     margin: -22px -7px;
     height: 50px;
+}
+
+
+@font-face {
+    font-family: TT Commons Light;
+    src: url("../fonts/TT\ Commons\ Light.otf");
 }
 
 

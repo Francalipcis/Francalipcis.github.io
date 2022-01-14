@@ -1,0 +1,19 @@
+body{
+    background-color:  #31112c;
+}
+
+.pronostico_container{
+    margin-top: -3%;
+}
+
+
+
+.pronostico_container{
+    overflow: scroll;
+    height: 87%;
+}
+
+
+.pronostico_container tr{
+    background-color: aqua;
+}

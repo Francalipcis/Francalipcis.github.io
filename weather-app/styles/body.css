@@ -1,12 +1,17 @@
 body{
 /*    background: linear-gradient(to bottom, #00c3ff, #00FFFF, #339cc2);*/
     background-image: url("../img/bakground/bg.jpg");
+    background-color:  #31112c;
     font-family:"TT Commons Light";
     align-items: center;
     /*data*/
     color: #fff;
     font-family: "TT Commons Light";
 
+}
+
+.body-container{
+    visibility: visible;
 }
 
 
@@ -16,24 +21,25 @@ body{
 }
 
 
-.input_country{
-    margin-top:5%;
-    width: 30%;
-    height: 30%;
-}
-#C_inputButton{
-    margin-top:5%;
-    height: 43%;
-    width: 6%;
-    background: transparent;
-    border: none;
-}
-#C_inputButton img{
-    margin-top: -40%;
-}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********Home Styles********/
 
 /*generales description sky & description wind*/
 .wind_div{
@@ -174,7 +180,7 @@ body{
     display: inline-block;
     position: absolute;
     color: #fff;
-    margin-top: 87%;
+    margin-top: 0%;
     margin-left: 28%;
     font-size: 16px;
     background: transparent;
@@ -282,6 +288,20 @@ body{
     margin-top: 15.7%;
     margin-left: 0%;
 }
+
+
+
+
+
+
+
+/**pronostic mod**/
+.pronostico_container{
+    display: inline-block;
+    position: absolute;
+    margin-top: 77%;
+}
+
 
 
 

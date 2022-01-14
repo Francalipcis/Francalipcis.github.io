@@ -1,10 +1,12 @@
-window.addEventListener('load', () => {
+window.addEventListener('load', () =>{
     const apiKey = "de09f2829c1f439a88b133130220801"
     let long;
     let lat;
 
 
-    let position
+    let position 
+
+
 
 
     let Description = document.getElementById('sky_description');
@@ -39,14 +41,16 @@ window.addEventListener('load', () => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
             
+            let actual_pos = lat + ", " + long;
             
             let to_day = new Date();
 
 
             const proxi = 'https://cors-anywhere.herokuapp.com/'
 
-            const api = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${long}&lang=es&aqi=yes`
+            const api = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${actual_pos}&lang=es&aqi=yes`
 
+            console.log(api);
 
             fetch(api)
             .then(data => { //recolectando la data de la api y combirtuendola en un objeto
