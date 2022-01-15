@@ -24,8 +24,8 @@ window.addEventListener('load', () => {
             .then(data =>{  //recolectando informacion del JSON
                 console.log(data);
 
-
-
+                document.getElementById('country').textContent = data.timezone;
+                document.getElementById('city').textContent = "/" + data.city_name;
 
 
                 for(var i = 1; i <= 5; i++){

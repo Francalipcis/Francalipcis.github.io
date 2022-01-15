@@ -25,6 +25,9 @@ header{
     font-size: 12px;
     margin-top: 11px;
 }
+.country{
+    margin-left: -24%;
+}
 .city{
     display: inline-block;
     position: absolute;
