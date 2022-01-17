@@ -80,7 +80,7 @@ body{
     display:inline-block;
     margin-top: 5%;
     font-weight: 10;
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 3px;
 }
 
@@ -88,9 +88,9 @@ body{
 .sky_img{
     display: inline-block;
     position: absolute;
-    margin-top: 17%;
-    width: 30%;
-    margin-left: 61%;
+    margin-top: 5%;
+    width: 35%;
+    margin-left: 65%;
 }
 
 
