@@ -96,7 +96,6 @@ window.addEventListener('load', () =>{
 
 
                 
-                document.getElementById('sky_img').src="https:" + data.current.condition.icon;
                 /*
                 //cambia la imagen del #sky dependiendo la hora
                 if (data.current.condition.icon == "01d"){
