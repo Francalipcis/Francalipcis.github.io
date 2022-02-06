@@ -1,0 +1,48 @@
+
+
+body{
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Century;
+    width: 100%;
+    height: 100vh;
+    background-color: #171717;
+    color: rgb(0, 167, 0);
+}
+
+.stagger-visualizer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 17rem;
+  height: 17rem;
+  margin-left: 40%;
+}
+
+.stagger-visualizer div {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid rgb(41, 232, 50);
+  background-color: rgb(11, 211, 74);
+}
+
+
+
+
+#bot_voice{
+    padding: 50px;
+    margin: 40px;
+    box-shadow: 0px 0px 12px rgb(21, 21, 21) ;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+body::-webkit-scrollbar{
+  overflow: hidden;
+}
