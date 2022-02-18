@@ -37,7 +37,14 @@ body{
 
 .logo {
     height: 90px;
+    margin-left: 20px;
+    margin-top: 8px;
 }
+
+.links{
+    margin-right: 80px;
+}
+
 
 
 .links li{
@@ -311,8 +318,15 @@ footer h4{
 @media (max-width: 700px) {
     .logo {
         height: 70px;
+        margin-left: 0px;
+        margin-top: 0px;
     }
     
+    .links{
+        margin-right: 0px;
+    }
+
+
     .logoUbi img{
         width: 100px;
     }
@@ -323,5 +337,22 @@ footer h4{
         margin-top: 180px;
         margin-left: 240px;
         
+    }
+
+
+
+    
+}
+
+
+
+
+@media (max-width: 380px){
+    .links{
+        font-size: 13px;
+    }
+
+    .links a{
+        margin-right: 5px;
     }
 }
