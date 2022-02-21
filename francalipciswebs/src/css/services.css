@@ -1,0 +1,153 @@
+:root{
+    --paddingSections: 60px 0;
+    --marginElements: 40px;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingSections);
+}
+
+
+
+/*header*/
+header{
+    background-color: rgb(30, 30, 30);
+}
+
+
+
+/*Menu de navegacion*/
+.menu-navegacion{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 1px;
+}
+.links li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+.links a{
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 20px;
+    color: #fefefe;
+}
+
+.links a:hover{
+    color: #7d7d7d;
+}
+/*---------------------*/
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:600px;
+}
+
+.services-container{
+    display: flex;
+    height: 530px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body h1{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: #fefefe;
+}
+
+
+.service{
+    display: flex;
+    height: 360px;
+    width: 220px;
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 25px;
+    color: #fefefe;
+    background-color: #000;
+    border: #1ec3ff solid 2px;
+    border-radius: 14px;
+/*    box-shadow: #56d2ff 0px 0px 10px 1px;*/
+    transition: 0.5s;
+}
+
+.service:hover{
+    box-shadow: #56d2ff 0px 0px 30px 1px;
+}
+
+
+
+.service h4{
+    font-size: 12px;
+/*    border-bottom: #56d2ff solid 0.5px;*/
+}
+
+.service h2{
+    border-bottom: #56d2ff solid 2px;
+}
+
+.thebest{
+    border: #47ceff solid 3px;
+    width: 280px;
+    height: 420px;
+}
+
+.thebest h2{
+    font-size: 18px;
+}
+
+
+
+
+
+
+/***** media querys *****/
+@media (max-width: 379px){
+    .links a{
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 1179px){
+    .service{
+        margin-top: 40px;
+    }
+
+    .thebest h2{
+        font-size: 18px;
+    }
+}
