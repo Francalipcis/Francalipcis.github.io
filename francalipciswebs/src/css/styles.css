@@ -1,0 +1,519 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+:root{
+    --paddingSections: 60px 0;
+    --marginElements: 40px;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingSections);
+}
+
+
+/*Menu de navegacion*/
+.menu-navegacion{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 1px;
+}
+.links li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+.links a{
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 20px;
+    color: #fefefe;
+}
+
+.links a:hover{
+    color: #7d7d7d;
+}
+
+
+
+
+
+/*Bread*/
+.bread{
+    height: 658px;
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/video\ 1.gif');
+    transition: 0.5s;
+    box-shadow: 1px 0px 10px 5px;
+}
+
+
+
+
+
+
+/*Hero*/
+
+.hero{
+    margin-top: 140px;
+    height: 350px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.container-text{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:aliceblue;
+}
+
+
+.container-text h1{
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hero p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+.button{
+    display: block;
+    margin:  0 auto;
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 25px;
+    border-radius: 15%;
+    color: rgb(50, 50, 50);
+}
+
+
+.button{
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    text-align:center;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    display:inline-block;
+    color: rgb(0, 0, 0);
+    background:rgb(171, 171, 171);
+    padding: 7px 20px;
+    white-space: nowrap;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 100px;
+    margin: 10px 5px;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+ 
+
+
+/*body*/
+.body-container{
+    height: 1000px;
+    color:  #000;
+}
+
+
+    /*Descripcion del estudio*/
+.quienesSomos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    background-color: #000;
+    color: #f2f2f2;
+}
+
+.quienesSomos img{
+    height: 500px;
+}
+
+.quienesSomos h2{
+    display: inline-block;
+    margin-bottom: 100px;
+}
+
+
+.quienesSomos p{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+    /*Contacto*/
+.Contacto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 500px;
+    background-color: #f2f2f2;
+}
+
+
+.Contacto h2{
+    position: absolute;
+}
+
+
+.card{
+    height: 350px;
+    width: 240px;
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: #000;
+    border: transparent solid 2px;
+    background-color: #f2f2f2;
+    box-shadow: 10px 10px 20px 0.5px;
+    text-align: center;
+    transition: 0.4s;
+}
+.gmail:hover{
+    border: red solid 2px;
+    background-color: white;
+}
+
+.instagram:hover{
+    border: rgb(255, 101, 224) solid 2px;
+    background-color: white;
+}
+
+
+.phone:hover{
+    border: rgb(64, 255, 47) solid 2px;
+    background-color: white;
+}
+
+
+
+
+
+/*Ver planes*/
+.servicios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 600px;
+    background-color: #000;
+    color: #000;
+}
+
+
+.serv-container h2{
+    position: absolute;
+    margin-bottom: 200px;
+}
+
+.serv-container{
+    display: flex;
+    height: 400px;
+    width: 60%;
+    font-size: 14.5px;
+    font-family: verdana;
+    
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    padding-left: 100px;
+    padding-right: 100px;
+
+    border: #b0afaf solid 1px;
+    background-color: #d0d0d0;
+    transition: 0.5s;
+}
+
+
+
+
+.serv-container:hover{
+    letter-spacing: 3px;
+}
+
+
+
+
+
+
+
+.serv-container a{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    display: inline-block;
+    
+    color: rgb(0, 0, 0);
+    background: #009dff;
+    color: #fefefe;
+    
+    font-size: 20px;
+    padding: 14px 60px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer{
+    position: flex;
+    background-color: #fefefe;
+}
+.maked{
+    margin-top: 45px;
+}
+
+
+
+
+
+.derechos{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    height: 30px;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queris*/
+
+
+@media (max-width: 1039px){
+    .quienesSomos{
+        display: flex;
+        height: 800px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .quienesSomos img{
+        height: 300px;
+    }
+
+    .text{
+        margin-top: 0px;
+        margin-bottom: 300px;
+        width: auto;
+    }
+
+    .text h2{
+        margin-bottom: 50px;
+    }
+
+
+    .Contacto{
+        height: 900px;
+    }
+
+}
+
+
+
+
+@media (max-width: 700px) {
+    .logo {
+        height: 70px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    
+    .links{
+        margin-right: 0px;
+    }
+    
+    .quienesSomos img{
+        height: 300px;
+    }
+
+    .quienesSomos{
+        height: 600px;
+    }
+
+    .derechos{
+        position: absolute;
+        font-size: 8px;
+        margin-top: 180px;
+        margin-left: 240px;
+        
+    }
+
+
+
+    
+}
+
+
+@media (max-width: 687px){
+    .card{
+        height: 200px;
+    }
+
+}
+
+
+
+
+@media (max-width: 429px){
+    .links{
+        font-size: 13px;
+    }
+
+    .links a{
+        margin-right: 5px;
+    }
+
+
+    .quienesSomos img{
+        height: 150px;
+    }
+
+    .quienesSomos{
+        height: 400px;
+    }
+
+    .text{
+        margin-top: 7px;
+    }
+}
+
+
+@media (max-width: 379px){
+    .links a{
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+}
+
+
+@media (max-width: 372px){
+    .serv-container{
+        padding-left: 60px;
+        padding-right: 60px;
+
+    }
+
+}
+
+
+
+@media (max-width: 294px){
+    .serv-container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .serv-container h2{
+        font-size: 17px;
+    }
+}
