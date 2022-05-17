@@ -36,10 +36,10 @@ let infoScrollTimeline = gsap.timeline({
     },
 })
 infoScrollTimeline.from('#logo', {
-    duration: 2,
+    duration: 2.5,
     
     opacity:0,
-    x:-250,
+    x:-300,
     
 })
 

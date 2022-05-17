@@ -105,7 +105,8 @@ body h1{
 }
 
 .service:hover{
-    box-shadow: #56d2ff 0px 0px 30px 1px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 
