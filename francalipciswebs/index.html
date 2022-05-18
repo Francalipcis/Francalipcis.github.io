@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="./src/css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-    <title>Francalipcis</title>
+    <title>Francalipcis, Diseño web freelancer</title>
 </head>
 <body>
     <header>
         <!--seccion que contiene el fondo animado-->
-        <section class="bread" id="Inicio">
+        <section class="bread">
+            
+            <div id="particles-js"></div>
+            
             <!--menu de navegacion-->
             <nav class="menu-navegacion">
                 <div class="links"> 
@@ -28,9 +32,9 @@
             <!--hro con frase-->
             <section class="hero">
                 <div class="container-text container">
-                    <h1>Su propia pagina web al alcance de su mano</h1>
-                    <h2>Cotice su pagina hoy</h2>
-                    <a href="#contacto" class="button" id="button-contact">¡¡Contactenos!!</a>
+                    <h1 id="title">Su propia pagina web al alcance de su mano</h1>
+                    <h2 id="subTitle">Hoy mas que nunca, necesitas una pagina web y nosotros te podemos ayudar</h2>
+                    <a href="#contacto" class="button" id="button-contact">Contactenos</a>
                 </div>
             </section>
         </section>
@@ -46,11 +50,11 @@
             <img src="./src/img/logo.png" alt="logo" id="logo">
         
             <div class="text">
-                <h2 id="informationH2">¿quienes somos?¿que buscamos?</h2>
+                <h2 id="informationH2">quienes somos?</h2>
             
                 <p id="informationId">Somos un estudio freelancer de desarrollo front-end,
-                que busca crearle presencia en la web a todo negocio o enprendimiento 
-                que lo desee o nececite.</p>
+                que busca darle presencia en la web a todo negocio o enprendimiento 
+                que lo nececite.</p>
             </div>
         
         </section>
@@ -81,7 +85,7 @@
 
         <section class="servicios" id="servicios">
             <div class="serv-container" id="servicesContainer">
-                <h2>Vea los servicios que tenemos para ofreser</h2>
+                <h2>NUESTROS SERVICIOS</h2>
                 <a href="https://francalipcis.github.io/francalipciswebs/price/" class="Ver-btn">Visitar</a>
             </div>
         </section>
@@ -99,6 +103,8 @@
         </div>
     </footer>
 -->
+
+<script src="./src/js/particles.js"></script>
 <script src="./src/js/main.js"></script>
 </body>
 </html>

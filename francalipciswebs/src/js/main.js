@@ -9,7 +9,7 @@ let tl = gsap.timeline();
 tl.from('.menu-navegacion', {
     duration: 2,
 
-    x: -2000,
+    x: -1700,
     ease:'power4'
 })
 
@@ -19,8 +19,34 @@ tl.from('.linck', {
     duration: .5,
     
     y: -200,
-    stagger:0.3
+    stagger:0.1
 })
+
+
+
+
+//animando los titulos 
+tl.from('#title', {
+    delay:.5,
+    duration:1,
+    
+    y:50,
+    opacity:0
+})
+
+tl.from('#subTitle', {
+    duration:.5,
+    
+    y:50,
+    opacity:0
+})
+
+tl.from('#button-contact', {
+    duration:.5,
+    opacity:0
+})
+
+
 
 
 

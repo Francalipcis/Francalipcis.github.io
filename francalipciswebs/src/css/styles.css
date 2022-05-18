@@ -3,16 +3,51 @@ html{
 }
 
 
-
-
 :root{
     --paddingSections: 60px 0;
     --marginElements: 40px;
 }
 
+
+/*Fuentes*/
+
+@font-face {
+    font-family: 'MusticaPro-SemiBold';
+    src: url('../fonts/MusticaPro-SemiBold.otf')
+}
+
+@font-face {
+    font-family: 'Bebas-Regular';
+    src: url('../fonts/Bebas-Regular.otf')
+}
+
+@font-face {
+    font-family: 'AldotheApache';
+    src: url('../fonts/AldotheApache.ttf')
+}
+
+@font-face {
+    font-family: 'VECTRO-Bold';
+    src: url('../fonts/VECTRO-Bold.otf')
+}
+
+@font-face {
+    font-family: 'DS-TERM';
+    src: url('../fonts/DS-TERM.ttf')
+}
+
+@font-face {
+    font-family: 'TerminalDay';
+    src: url('../fonts/TerminalDay.otf')
+}
+
+
+
+
+
 body{
     background-color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'VECTRO-Bold';
     background-color: rgb(255, 255, 255);
     margin: 0px;
 }
@@ -32,10 +67,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.315);
     height: 70px;
     width: 100%;
     box-shadow: 0px 0px 10px 1px;
+    z-index: 3;
 }
 .links li{
     list-style: none;
@@ -62,43 +98,52 @@ body{
 .bread{
     height: 658px;
     background-color: #000;
-    background-position: center;
-    background-size: cover;
-    background-image: url('../img/video\ 1.gif');
+    background-color: #101010;
     transition: 0.5s;
     box-shadow: 1px 0px 10px 5px;
 }
 
-
+#particles-js{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1px;
+}
 
 
 
 
 /*Hero*/
 
+
+
 .hero{
-    margin-top: 140px;
-    height: 350px;
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    height: 570px;
+    font-family:'TerminalDay';
+    background-color: transparent;
 }
 
 
 .container-text{
     padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color:aliceblue;
+    height: 60%;
+    color: rgb(255, 255, 255);
+    z-index: 3;
 }
 
 
 .container-text h1{
-    font-size: 30px;
+    font-size: 40px;
+    letter-spacing: 4px;
     padding: 10px;
     border-radius: 10px;
+}
+.container-text h2{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px;
 }
 
 .hero p{
@@ -114,6 +159,7 @@ body{
     text-decoration: none;
     padding: 15px 0;
     font-size: 25px;
+    width: 160px;
     border-radius: 15%;
     color: rgb(50, 50, 50);
 }
@@ -122,24 +168,29 @@ body{
 .button{
     text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
     text-align:center;
-    text-decoration: none;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    display:inline-block;
-    color: rgb(0, 0, 0);
-    background:rgb(171, 171, 171);
-    padding: 7px 20px;
+
+    font-family: 'VECTRO-Bold';
+    color: white;
+    background:transparent;
+    border: solid white 2px;
+    
+    padding: 15px 50px 15px 50px;
+    
     white-space: nowrap;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 100px;
+    border-radius: 20px;
     margin: 10px 5px;
 
-    -webkit-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    transition: .5s;
 }
+
+
+.button:hover{
+    background: rgba(94, 94, 94, 0.253);
+    border: solid transparent 2px;
+}
+
+
+
  
 
 
@@ -147,6 +198,7 @@ body{
 .body-container{
     height: 1000px;
     color:  #000;
+    z-index: 2;
 }
 
 
