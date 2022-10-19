@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Bebas-Regular';
+    src: url('../fonts/Bebas-Regular.ttf');
+}
+@font-face {
+    font-family: 'ethnocentric';
+    src: url('../fonts/ethnocentric\ rg.otf');
+}
+
+
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Bebas-Regular';
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'ethnocentric';
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    /* background-color: antiquewhite; */
+    height: 50px;
+    margin-top: 22px;
+    margin-left: 35px;
+}
+
+nav img{
+    width: 220px;
+}
+
+nav a{
+    margin-left: 55px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Body content*/
+
+
+.container{
+    display: flex;
+    height: 655px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+
+
+._1{
+    background-image: url('../img/space.webp');
+    background-size: cover;
+}
+
+._2{
+    background-image: url('../img/2.webp');
+    background-size: cover;
+}
+
+._3{
+    background-image: url('../img/tecno_\ eco.jpg');
+    background-size: cover;
+}
+
+
+
+
+
+.container .texts{
+    height: 310px;
+    width: 545px;
+    margin-left: 45px;
+    margin-bottom: 100px;
+    letter-spacing: 4px;
+    /* background-color: antiquewhite; */
+}
+
+.container .texts h2{
+    font-size: 50px;
+    color:white;
+}
+
+.container .texts a{
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:white;
+    padding: 17px 27px 17px 27px;
+    border: solid 2px;
+}
+
