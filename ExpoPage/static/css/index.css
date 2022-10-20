@@ -15,19 +15,18 @@ body{
     font-family: 'Bebas-Regular';
 }
 
-h1{
-    font-size: 40px;
-    font-family: 'ethnocentric';
-
-}
-
 nav{
     display: flex;
     align-items: center;
     position: fixed;
-    /* background-color: antiquewhite; */
-    height: 50px;
-    margin-top: 22px;
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 75px;
+    width: 100%;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'ethnocentric';
     margin-left: 35px;
 }
 
@@ -53,20 +52,24 @@ nav a{
     align-items: flex-end;
 }
 
-
-
-._1{
+.int{
     background-image: url('../img/space.webp');
     background-size: cover;
 }
 
+._1{
+    background-image: url('../img/slowBot2.jpg');
+    background-size: cover;
+    background-position: 0px -140px;
+}
+
 ._2{
-    background-image: url('../img/2.webp');
+    background-image: url('../img/cleanO.png');
     background-size: cover;
 }
 
 ._3{
-    background-image: url('../img/tecno_\ eco.jpg');
+    background-image: url('../img/3.webp');
     background-size: cover;
 }
 
@@ -85,7 +88,7 @@ nav a{
 
 .container .texts h2{
     font-size: 50px;
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
 .container .texts a{
