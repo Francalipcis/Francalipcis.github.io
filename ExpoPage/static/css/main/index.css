@@ -1,0 +1,70 @@
+
+
+/*Body content*/
+body{
+    background-color: black;
+    font-family: 'Bebas-Regular';
+    color: white;
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    height: 655px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.int{
+    background-image: url('../../img/space.webp');
+    background-size: cover;
+}
+
+._1{
+    background-image: url('../../img/multiscope-forester-planter.png');
+    background-size: cover;
+}
+
+._2{
+    background-image: url('../../img/slowBot2.jpg');
+    background-size: cover;
+    background-position: 0px -140px;
+}
+
+._3{
+    background-image: url('../../img/cleanO.png');
+    background-size: cover;
+}
+
+._4{
+    background-image: url('../../img/3.webp');
+    background-size: cover;
+}
+
+
+
+
+
+.container .texts{
+    height: 310px;
+    width: 545px;
+    margin-left: 45px;
+    margin-bottom: 100px;
+    letter-spacing: 4px;
+    /* background-color: antiquewhite; */
+}
+
+.container .texts h2{
+    font-size: 50px;
+    color:rgb(255, 255, 255);
+}
+
+.container .texts a{
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:white;
+    padding: 17px 27px 17px 27px;
+    border: solid 2px;
+}
+

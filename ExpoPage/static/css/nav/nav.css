@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Bebas-Regular';
+    src: url('../../fonts/Bebas-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'ethnocentric';
+    src: url('../../fonts/ethnocentric\ rg.otf');
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.5);
+    font-family: 'Bebas-Regular';
+    height: 75px;
+    width: 100%;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'ethnocentric';
+    margin-left: 35px;
+}
+
+nav img{
+    width: 220px;
+}
+
+nav a{
+    margin-left: 55px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
