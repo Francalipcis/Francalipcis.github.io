@@ -1,0 +1,50 @@
+body{
+    font-family: 'Bebas-Regular';
+    background-color: rgb(172, 142, 86);
+    /* background-color: rgb(72, 150, 72); */
+    /* background-color: white; */
+    color: rgb(253, 253, 253);
+    margin: 0px;
+}
+
+.baner{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+
+    background-image: url("../../img/multiscope-forester-planter.png");
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: 0px -180px;
+    box-shadow: black 0px -10px 10px -8px inset;
+}
+
+.baner h2{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    margin-bottom: 100px;
+
+    padding: 5px 50px 5px 50px;
+    clip-path: polygon(100% 0%, 2% 0%, 0% 100%, 97% 100%);
+}
+
+
+.content{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(110, 89, 66);
+    padding: 70px;
+    margin-left: 35px;
+    width: 80%;
+}
+
+.content .img1{
+    width: 700px;
+    margin-left: 35px;
+}
+
+.content iframe{
+    margin-left: 35px;
+}
