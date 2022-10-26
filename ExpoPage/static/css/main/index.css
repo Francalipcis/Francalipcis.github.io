@@ -65,6 +65,16 @@ body{
 }
 
 
+
+footer{
+    display: flex;
+    height: 300px;
+    align-items: flex-start;
+}
+
+
+
+
 /* media queris */
 
 @media (max-width: 360px) {
