@@ -74,9 +74,10 @@ footer{
 
 footer a{
     margin-left: 50px;
+    margin-top: 50px;
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 60px;
 }
 
 
