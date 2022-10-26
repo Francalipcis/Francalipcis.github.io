@@ -12,7 +12,7 @@ body{
     height: 400px;
     justify-content: center;
     align-items: center;
-
+    width: 100%;
     font-size: 30px;
 
     background-image: url("../../img/multiscope-forester-planter.png");
@@ -48,3 +48,5 @@ body{
 .content iframe{
     margin-left: 35px;
 }
+
+

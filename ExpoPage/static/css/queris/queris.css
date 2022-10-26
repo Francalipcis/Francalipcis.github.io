@@ -1,0 +1,59 @@
+/* queris */
+@media (max-width: 925px) {
+    .content{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 854px) {
+    .content .img1{
+        width: 400px;
+    }
+    .content iframe{
+        width: 400px;
+    }
+    .content{
+        margin-left: 45px;
+        padding: 40px;
+    }
+  }
+
+    @media (max-width: 680px) {
+        .content{
+            margin-left: 30px;
+            padding: 30px;
+        }
+    }
+
+  @media (max-width: 480px) {
+    .content .img1{
+        width: 300px;
+    }
+    .content iframe{
+        width: 300px;
+    }
+    .content{
+        margin-left: 20px;
+        padding: 20px;
+    }
+  }
+
+  @media (max-width: 392px) {
+    .content .img1{
+        width: 230px;
+    }
+    .content iframe{
+        width: 230px;
+    }
+
+  }
+
+  @media (max-width: 345px) {
+    .content .img1{
+        width: 250px;
+    }
+    .content iframe{
+        width: 250px;
+    }
+
+  }
