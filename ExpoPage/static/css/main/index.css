@@ -72,8 +72,11 @@ footer{
     align-items: flex-start;
 }
 
-footer h5{
-    margin-left: 30px;
+footer a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
 }
 
 
