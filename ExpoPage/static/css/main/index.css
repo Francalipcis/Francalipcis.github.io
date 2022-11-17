@@ -16,9 +16,27 @@ body{
     background-size: cover;
 }
 
-.int{
-    background-image: url('../../img/space.webp');
+#particles-js{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1px;
 }
+
+.int{
+    background-color: rgb(26, 26, 26);
+    z-index: -1;
+}
+
+
+.int .img1{
+    width: 600px;
+    margin-bottom: 120px;
+    z-index: 1;
+}
+
+
 
 ._1{
     background-image: url('../../img/multiscope-forester-planter.png');

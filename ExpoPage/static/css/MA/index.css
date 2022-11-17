@@ -5,6 +5,8 @@ body{
     /* background-color: white; */
     color: rgb(253, 253, 253);
     margin: 0px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .baner{
