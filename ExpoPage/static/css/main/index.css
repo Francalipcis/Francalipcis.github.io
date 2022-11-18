@@ -119,11 +119,12 @@ footer a{
     .container .texts h2{
         font-size: 40px;
     }
-
-
-
-
 }
 
-
-
+@media (max-width: 1090px) {
+    .int .img1{
+        width: 0.5px;
+        visibility: hidden;
+        position: fixed;
+    }
+}
