@@ -83,6 +83,24 @@ body{
 }
 
 
+
+footer{
+    display: flex;
+    height: 70px;
+    align-items: flex-start;
+}
+
+footer a{
+    margin-left: 50px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+}
+
+
+
+
 /* media queris */
 
 @media (max-width: 360px) {
