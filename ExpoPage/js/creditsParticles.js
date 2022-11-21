@@ -110,3 +110,19 @@ particlesJS(
         "retina_detect": true
       }
 );
+
+
+
+
+
+//Animations
+
+const tl = gsap.timeline({})
+
+tl.from("#text_1", {x:-100, opacity:0, duration:1})
+tl.from("#text_2", {x:100, opacity:0, duration:1})
+tl.from("#text_3", {x:-100, opacity:0, duration:1})
+
+
+
+

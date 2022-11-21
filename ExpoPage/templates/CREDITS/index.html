@@ -18,11 +18,11 @@
     </style>
     
     <!--Nav var-->
-    <nav>
-        <h1>Expo tecno</h1>
-        <a href="/ExpoPage">Inicio</a>
-        <a href="/ExpoPage/#2">Datos</a>
-        <a href="/ExpoPage">creditos</a>
+    <nav id="nav">
+        <h1 id="Ntitle">Expo tecno</h1>
+        <a href="/ExpoPage" id="lnk">Inicio</a>
+        <a href="/ExpoPage/#2"id="lnk">Datos</a>
+        <a href="templates/CREDITS/"id="lnk">creditos</a>
     </nav>
     <!----------->
 
@@ -32,15 +32,15 @@
     </div>
         <div class="container int">
             <div class="texts">
-                <h2>
-                    Esta pagina ha sido programada desde 
-                    su inicio por el alumno Francisco Barreneche, 
-                    en colaboracion para la expo tecno arte 2022
-                </h2>
+                <h2 id="text_1">Esta pagina ha sido programada desde su inicio</h2>
+                <h2 id="text_2">por el alumno Francisco Barreneche,</h2>
+                <h2 id="text_3">en colaboracion para la expo tecno arte 2022</h2>
             </div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-        <script src="../../js/creditsParticles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="../../js/creditsParticles.js"></script>
+    <script src="../../js/navAnimations.js"></script>
 </body>
 </html>
