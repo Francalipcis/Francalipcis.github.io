@@ -33,7 +33,9 @@ body{
 
 
 
-
+img {
+    pointer-events: none;
+}
 
 
 .container .texts{

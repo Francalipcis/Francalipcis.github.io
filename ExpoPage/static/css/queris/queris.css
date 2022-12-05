@@ -1,3 +1,7 @@
+img {
+    pointer-events: none;
+}
+
 /* queris */
 @media (max-width: 925px) {
     .content{

@@ -100,7 +100,9 @@ footer a{
     font-size: 60px;
 }
 
-
+img {
+    pointer-events: none;
+}
 
 
 /* media queris */
