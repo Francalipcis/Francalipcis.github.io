@@ -3,7 +3,7 @@
 /*Body content*/
 body{
     background-color: black;
-    font-family: 'Bebas-Regular';
+    font-family: 'cubic';
     color: white;
     margin: 0px;
 }
@@ -71,7 +71,7 @@ body{
 }
 
 .container .texts h2{
-    font-size: 50px;
+    font-size: 40px;
     color:rgb(255, 255, 255);
 }
 
@@ -119,7 +119,13 @@ footer a{
         background-position: -590px;
     }
     .container .texts h2{
-        font-size: 40px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 290px) {
+    .container .texts h2{
+        font-size: 25px;
     }
 }
 

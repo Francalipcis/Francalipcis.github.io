@@ -8,21 +8,37 @@
     src: url('../../fonts/ethnocentric\ rg.otf');
 }
 
+@font-face {
+    font-family: 'cubic';
+    src: url('../../fonts/Square.ttf');
+}
+
+@font-face {
+    font-family: 'OriginTech';
+    src: url('../../fonts/OriginTech\ personal\ use.ttf');
+}
+
+
+
+
+
+
 nav{
     display: flex;
     align-items: center;
     position: fixed;
     background-color:rgba(0, 0, 0, 0.5);
-    font-family: 'Bebas-Regular';
+    font-family: 'cubic';
     height: 75px;
     width: 100%;
     z-index: 1;
 }
 
 h1{
-    font-size: 40px;
-    font-family: 'ethnocentric';
+    font-size: 45px;
+    font-family: 'cubic';
     margin-left: 35px;
+    letter-spacing: 2px;
 }
 
 nav img{
@@ -78,5 +94,12 @@ nav a{
     nav a{
         margin-left: 25px;
         font-size: 20px;
+    }
+}
+
+
+@media (max-width: 380px) {
+    nav a{
+        margin-left: 0px;
     }
 }
