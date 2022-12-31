@@ -9,23 +9,23 @@ const geometry = new THREE.SphereGeometry(3, 64, 64)
 const material = new THREE.MeshPhongMaterial({
     roughness:1,
 	metalness:0,
-    map: new THREE.TextureLoader().load('./material/earthmap.jpg'),
-    bumpMap: new THREE.TextureLoader().load('./material/earthbump.jpg'),
+    map: new THREE.TextureLoader().load('../public/earthmap.jpg'),
+    bumpMap: new THREE.TextureLoader().load('./public/earthbump.jpg'),
     bumpScale: 0.6,
-    specular: new THREE.TextureLoader().load('./material/specularmap.jpg')
+    specular: new THREE.TextureLoader().load('../public/specularmap.jpg')
 })
 const earth = new THREE.Mesh(geometry, material)
 scene.add(earth)
     
     //clouds
 const cloudsGeometry = new THREE.SphereGeometry(3.08, 64, 64)
-const cloudsMaterial = new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load('./material/clouds.png'), transparent: true})
+const cloudsMaterial = new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load('../public/clouds.png'), transparent: true})
 const clouds = new THREE.Mesh(cloudsGeometry, cloudsMaterial)
 scene.add(clouds)
 
     //stars
 const starsGeometry = new THREE.SphereGeometry(80, 64, 64)
-const starsMaterial = new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load('./material/galaxy.png'), side: THREE.BackSide})
+const starsMaterial = new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load('../public/galaxy.png'), side: THREE.BackSide})
 const stars = new THREE.Mesh(starsGeometry, starsMaterial)
 scene.add(stars)
 
